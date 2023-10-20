@@ -1,0 +1,729 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>[projet-2] </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6623b4cf-4756-4d79-a57a-28244048bd48" class="page sans"><header><h1 class="page-title">[projet-2] </h1><p class="page-description"></p></header><div class="page-body"><h1 id="68c6f41e-fd16-4298-afa7-682d971dca09" class="">Objectif</h1><hr id="3874578a-cdae-4751-b1db-7506d3a3c342"/><blockquote id="4b96ad54-2f3e-49f4-a0dd-c9248915e08b" class="">L’objectif est de <strong>rapatrier des données</strong> qui compilent des informations de diffusions de nouveaux épisodes de séries TV, pour ensuite <strong>les stocker de différentes façons</strong> et finalement faire <strong>quelques manipulations algorithmiques</strong> sur ces données.</blockquote><h1 id="9c3dd4b1-b591-46ea-a8af-42e427c2592d" class="">Notation</h1><hr id="366ee355-6e84-4ea0-b53f-aa6ee8dda48a"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3caf6990-4f6d-42ac-a5a4-a214bd59921b"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%"><strong>Toute trace d’une tentative donne des points. </strong></div></figure><h1 id="6479b650-de8a-44c8-91de-ed30691501af" class="">Setup</h1><hr id="d532aedd-675d-479c-a11c-5e0913eb996c"/><h2 id="52ba8160-dbaf-4f6b-b614-684be2421ea3" class="">Pré-requis</h2><hr id="54efe80f-f81d-4f04-90d7-8b7d96fde117"/><ul id="671128ab-9122-473b-9c77-34a65328fbca" class="bulleted-list"><li style="list-style-type:disc">Créer un repository <mark class="highlight-blue_background"><strong>PUBLIC</strong></mark><em><strong> </strong></em>par groupe</li></ul><ul id="4da3c795-56af-4fd8-aa83-a3353cf643ba" class="bulleted-list"><li style="list-style-type:disc">Dans le tableau des groupes : <ul id="6a53b804-e737-475b-8dfd-abc11a3f89ee" class="bulleted-list"><li style="list-style-type:circle">Renseigner  l’URL du repository </li></ul><ul id="310b011d-f5a5-49d5-b2a2-3d750cc58bb3" class="bulleted-list"><li style="list-style-type:circle">Renseigner l’URL de la BDD Scalingo que vous utiliserez (une seule par groupe)</li></ul></li></ul><ul id="b40811e2-2c2e-44b1-8c84-c8498c3c65c2" class="bulleted-list"><li style="list-style-type:disc">Veiller à ce que la branche finale que je corrigerai soit bien <code>main</code> ou <code>master</code></li></ul><ul id="53f7677a-b7f6-4091-ba91-8d99e49a5507" class="bulleted-list"><li style="list-style-type:disc">Utiliser Python 3.10 ou toute version ultérieure</li></ul><ul id="dddd1601-6695-4e1e-9db0-e9c0277e5cda" class="bulleted-list"><li style="list-style-type:disc"><strong>Rendre le projet avant dimanche 18h</strong></li></ul><ul id="47f3c9b2-2a0d-4ef7-8682-362abdeb1386" class="bulleted-list"><li style="list-style-type:disc">Je vous conseille d’utiliser un environnement virtuel, toutefois si vous ne le faites pas, pensez à utiliser la commande suivante pour afficher les versions des packages que vous utiliser et les renseigner dans le fichier <code>requirements.txt</code> (on écrirait dans ce cas : <code>pandas==1.5.1</code>). <strong>Pensez à bien utiliser cette commande dans le même terminal que celui que vous utilisez pour exécuter vos fichiers </strong><strong><code>.py</code></strong><strong>.</strong><pre id="30ae3bc6-3373-4cfe-ab16-04511dd417cb" class="code"><code>pip show pandas
+# Name: pandas
+# Version: 1.5.1
+# Summary: Powerful data structures for data analysis, time series, and statistics
+# Home-page: https://pandas.pydata.org
+# Author: The Pandas Development Team
+# Author-email: pandas-dev@python.org
+# License: BSD-3-Clause
+# Location: /usr/local/lib/python3.9/site-packages
+# Requires: numpy, python-dateutil, pytz
+# Required-by: altair, bqplot, cmdstanpy, s4d, seaborn, SIDEKIT, statsmodels, vaex-core, vega-datasets, xarray, yfinance</code></pre></li></ul><h2 id="e80d2b29-b3da-4f2f-92c9-cdd8d8eccb58" class="">Structure du projet</h2><hr id="ac03e443-ea16-40b5-9564-f9720fd71417"/><ul id="f3c06273-8eb9-4ca9-87d8-3ad0aac9c13f" class="bulleted-list"><li style="list-style-type:disc">Le projet devra suivre la structure suivante :</li></ul><pre id="86a57191-4eb7-43c1-ad1c-51fa35f2dd58" class="code"><code>├── README.md
+├── requirements.txt
+├── runtime.txt
+├── &lt;some_name&gt;.py ### fichier python
+├── ...
+├── &lt;some_name&gt;.py ### fichier python
+└── data
+		├── files
+    │   ├──  ... # tout fichier de votre choix
+    │   └── episodes.csv
+    └── databases
+				├──  ... # tout fichier de votre vhoix
+        └── database.db</code></pre><h1 id="e42d4683-d970-43a4-b7f4-00c9330815d8" class="">Consignes</h1><hr id="8fa15055-0948-40c9-9a8d-c0b1847a5db6"/><h2 id="ad4fc690-32a8-4792-9bbc-cb8a6f316a47" class="">Consignes générales</h2><hr id="07d04e95-af06-4efa-b8e9-55c38e99164a"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c7ddab80-29a8-4da8-9aa1-c2ee2fcea68c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Essayer d’abord de faire les questions 1️⃣, puis les 2️⃣, puis les 3️⃣…
+Veiller à respecter les consignes, en particulièrement les noms pour les tables SQL
+Vous pouvez faire les choix d’implémentation que vous souhaitez : en particulier, vous pouvez utiliser des fonctions ou des classes et vous pouvez organiser votre code comme vous le souhaitez.
+En revanche, le code devra être rendu dans des fichiers <code>.py</code> (vous pouvez utiliser un notebook pour développer, mais pas pour le rendu final).</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f211a041-91df-474c-b635-c4f2975d5c01"><div style="font-size:1.5em"><span class="icon">🙏</span></div><div style="width:100%">Si vous rendez du code qui ne fonctionne pas pour me montrer une tentative de réponse à une question, indiquez le moi !! Vous pouvez aussi commenter le code pour ne pas gêner l’exécution si le fichier est utilisé.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="135532b0-b003-43b3-8030-7ea421484c81"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Sauf dans les questions  <strong>SQL [2/2] &amp; Orchestration, </strong>on ne travaille qu’avec les données journalières d’Octobre 2023, et donc avec cette page : <a href="https://www.spin-off.fr/calendrier_des_series.html">https://www.spin-off.fr/calendrier_des_series.html</a></div></figure><ul id="92f3688a-614a-42ee-a6f7-992d8b88b5b3" class="bulleted-list"><li style="list-style-type:disc">1️⃣ Écrire un <code>README.md</code> de quelques lignes qui explique vos choix de code</li></ul><ul id="f3da04c1-99cc-44c4-aac9-74ba6a0a30b6" class="bulleted-list"><li style="list-style-type:disc">1️⃣ Bien renseigner le fichier <code>requirements.txt</code> avec les librairies utilisées ainsi que leurs versions (voir projet_I)</li></ul><ul id="3a66a5a3-54d7-46c0-bfe4-132474b5d194" class="bulleted-list"><li style="list-style-type:disc">1️⃣ Bien renseigner le fichier <code>runtime.txt</code> avec la version de Python utilisée</li></ul><ul id="f6dfde5e-8bff-4aa1-b605-01f847fc70e0" class="bulleted-list"><li style="list-style-type:disc">1️⃣ Dans le <code>README.md</code>, expliquer pourquoi il est important de respecter cette consigne : <blockquote id="a8c3db91-b591-4435-bc4e-3a025fb8e686" class="">“<strong>Pensez à bien utiliser cette commande dans le même terminal que celui que vous utilisez pour exécuter vos fichiers </strong><strong><code>.py</code></strong><strong>.“</strong></blockquote></li></ul><h2 id="c6661af9-0f7a-48b4-8b36-28fd011dd173" class="">Scraping [1/2]</h2><hr id="168d1cef-5d1b-4328-9163-97e5d014ea7e"/><p id="7da96334-8331-48e5-9f10-4841469e7f8a" class="">1️⃣ <strong>Récupérer les données relatives à la diffusion d’épisodes pour le mois en cours disponibles sur cette page :  </strong><a href="https://www.spin-off.fr/calendrier_des_series.html">https://www.spin-off.fr/calendrier_des_series.html</a></p><p id="14e8a06a-1fba-4fee-b5a2-9bfe510e96ec" class="">En particulier, on souhaite récupérer : </p><ul id="17a53ced-4d8a-49e8-801e-c85fa32fe592" class="bulleted-list"><li style="list-style-type:disc">Le nom de la série</li></ul><ul id="7132046e-ac59-4ef6-b626-7ccd0e617a2d" class="bulleted-list"><li style="list-style-type:disc">Le numéro de l’épisode</li></ul><ul id="d46e27cd-7811-4c69-993e-5cb4cbe9ab35" class="bulleted-list"><li style="list-style-type:disc">Le numéro de la saison</li></ul><ul id="a3647723-86d4-4269-80b0-ecabddb03bec" class="bulleted-list"><li style="list-style-type:disc">La date de diffusion de l’épisode</li></ul><ul id="eca36f02-c90e-4e13-a3bc-945882648319" class="bulleted-list"><li style="list-style-type:disc">Le pays d’origine</li></ul><ul id="b38065e4-70d8-450e-b52b-b9888f8061e7" class="bulleted-list"><li style="list-style-type:disc">La chaîne qui diffuse la série</li></ul><ul id="74990221-64c6-4b29-8642-3221d9c6e9ef" class="bulleted-list"><li style="list-style-type:disc">L’url relative de la page de l’épisode sur le site spin-off 
+(par exemple : <code>episode01-408094-01102023-saison14-Bob-s-Burgers.html</code>)</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="5ebdde4b-8f5f-488f-b7d0-d7923df4d88c"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%">Il y a des façons beaucoup plus simples que d’autres de récupérer toutes ces informations. En particulier : 
+- pensez à filtrer sur la bonne classe
+- la méthode <code>.find_previous_sibling()</code> permet d’atteindre l’élément précédent dans le DOM : (<code>elem = elem_successor.find_previous_sibling()</code>)
+- 🚨🚨 Certaines données sont disponibles dans de longues chaînes de caractères et ne nécessite pas d’aller les récupérer dans d’autres divisions html que celles qui contiennent les données d’épisodes ! Soyez attentifs et regardez bien</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2b5aa631-a582-4e30-a752-c862febbe906"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%">Il est peut être plus raisonnable de commencer à travailler dans un notebook, pour garder en mémoire les données entre plusieurs exécutions du code, ce que ne permettent pas les fichiers <code>.py</code></div></figure><h2 id="8e160387-5360-4ea8-89cf-b4b4e169f752" class="">Fichiers</h2><hr id="855319a2-195d-4cc1-be19-90157a8f34cb"/><ul id="30fe9346-8cb6-4b9a-a5b1-37d2f3bdf982" class="bulleted-list"><li style="list-style-type:disc">1️⃣ Enregistrez ces données dans un fichier <code>episodes.csv</code> dans le dossier <code>data/files</code> :<pre id="2dfa6b14-0dcf-42b9-a042-6580e85f2c72" class="code"><code># episodes.csv 
+&lt;nom_serie&gt;;&lt;numero_de_lepisode&gt;;&lt;numero_de_la_saison&gt;;...;&lt;url_episode&gt;
+&lt;nom_serie&gt;;&lt;numero_de_lepisode&gt;;&lt;numero_de_la_saison&gt;;...;&lt;url_episode&gt;
+...</code></pre></li></ul><ul id="66a49720-6aa6-472d-a4c4-9acdb740284e" class="bulleted-list"><li style="list-style-type:disc">3️⃣ Écrire une fonction ou une classe qui permet de lire le fichier <code>episodes.csv</code> <strong>sans utiliser de librairie</strong>. Cette fonction ou classe devra renvoyer une liste de tuples avec les bons types : <pre id="f46d721f-830e-400f-9f07-814d39d5fccd" class="code"><code>[
+	(&#x27;Mr Robot&#x27;, 1, 3, ...), # string, integer, integer, ...
+	(&#x27;Mr Robot&#x27;, 1, 4, ...)
+	.....
+]</code></pre></li></ul><h2 id="02b569fc-236b-4ce2-a8a6-085de3029ed9" class="">SQL [1/2]</h2><hr id="50bbe286-8466-438e-91e8-3fa03c7308af"/><ul id="0c7adf6c-bc79-4f2d-b6c2-b0fff468a171" class="bulleted-list"><li style="list-style-type:disc">2️⃣ Insérer les données de la question <strong>Scraping [1/2] </strong>dans base de données <code>sqlite</code> appelée <code>database.db</code> dans le dossier <code>data/databases</code>. La table devra s’appeler <code>episode</code> .
+Veillez à utiliser les types adéquats (la date peut toutefois être stockée en tant que chaîne de caractères avec un type<code>TEXT</code>).</li></ul><ul id="9fc2fe23-cea1-43a5-ba03-7d164ca91770" class="bulleted-list"><li style="list-style-type:disc">2️⃣ Faire de même un insérant cette fois-ci dans une table <code>episode</code> dans la base de données stockée sur Scalingo (une seule base de données par groupe).</li></ul><h2 id="6835d6c3-7e1e-4d7d-9647-2098d08790e9" class="">Algorithmie [1/2]</h2><hr id="380bd13c-6d17-4510-9b1b-7fe5c21d9a5f"/><ul id="99b3deda-3aaa-4702-9aae-e04d4c89942d" class="bulleted-list"><li style="list-style-type:disc">3️⃣ Calculer le nombre d’épisodes diffusés par chaque chaîne de télévision (présente dans les données) en Octobre.
+Vous pouvez faire directement des requêtes SQL, ou rapatrier les données depuis une table (ou un fichier dans lequel vous les auriez stocker) et faire les calculs avec Python. 
+<strong>Indiquer dans le fichier </strong><strong><code>README.md</code></strong><strong> le nom des trois chaînes qui ont diffusé le plus d’épisodes. </strong></li></ul><ul id="2eedec0f-c247-43aa-bbd3-480a35fe7cde" class="bulleted-list"><li style="list-style-type:disc">3️⃣ Faire de même pour les pays <strong>(pensez à mutualiser votre code !)</strong></li></ul><ul id="32072ab9-defd-4643-bbf7-68cec4c112c8" class="bulleted-list"><li style="list-style-type:disc">3️⃣ Quels sont les 10 mots les plus présents dans les noms des séries ? 
+Les indiquer dans le fichier <code>README.md</code></li></ul><h2 id="6889b97f-abc3-482a-bce5-3e191a59135d" class="">Scraping [2/2] </h2><hr id="a9112106-647a-493f-a2e1-f8f230f619a7"/><ul id="d3356c99-1b9a-4d05-af4c-53f8f24535c8" class="bulleted-list"><li style="list-style-type:disc">4️⃣ Sur les pages individuelles des épisodes (dont l’url à été récupérée lors de la première question), récupérer la durée de l’épisode. Les requêtes peuvent être un peu longue donc vous pouvez ne le faire que pour une seule chaîne comme Apple TV. Veiller à ne pas perdre les données pour pouvoir les insérer dans SQL. Pensez à utiliser un <code>time.sleep</code> entre les requêtes.</li></ul><h2 id="5f72a5d4-2b97-4777-b2c6-b37b642eeee5" class="">SQL [2/2]</h2><hr id="c30e899f-d30c-49a3-a5eb-d4f6c7a33981"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7052079d-ae59-4393-9dbd-73ecb2976b6d"><div style="font-size:1.5em"><span class="icon">⛔</span></div><div style="width:100%">Cette question nécessite d’avoir réussi la question précédente.</div></figure><ul id="c5b82905-3b21-49b4-903c-8524d7b69f23" class="bulleted-list"><li style="list-style-type:disc">4️⃣ Stocker les données de durée d’épisode (en minutes) dans une nouvelles table <code>duration</code> qui contiendra une <code>Foreign Key</code> pointant sur l’épisode en question dans la table <code>episode</code> <p id="f236325f-35a7-4274-895f-56f26c535d02" class="">Le faire localement avec la base <code>sqlite</code> et avec la base de données stockée sur Scalingo.</p></li></ul><h2 id="cfabd9ef-34f7-4d11-8694-d5cdd606b09d" class="">Algorithmie [2/2]</h2><hr id="c56ef14e-cc86-42e0-8da0-dba432d95c8c"/><ul id="fbedd934-b6d2-43e7-a45c-29e007616217" class="bulleted-list"><li style="list-style-type:disc">5️⃣ Quelle est la chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs sur le mois d’Octobre ? </li></ul><h1 id="37670fd5-40ac-4380-8b80-b6401f69e7b5" class="">Orchestration</h1><hr id="57f3ec36-f517-445d-9257-2b6c2a8d80c7"/><ul id="f1c9d06b-e75b-4e09-9ccd-688eccaac5bb" class="bulleted-list"><li style="list-style-type:disc">5️⃣  On souhaite que la commande suivante :  <pre id="ed0165e4-18c7-447d-8d97-5681880e45cf" class="code"><code># Pour le mois de novembre
+python3 summarize_episodes.py --month 11</code></pre><p id="63277634-b10c-4c36-aa43-9ec5323c07a1" class="">permette d’afficher dans la console pour le mois de notre choix les informations suivantes :</p><pre id="384e8c0b-44d8-4a2c-8b85-3702aa731164" class="code"><code>[NOMBRE] episodes seront diffusés pendant le mois de [MOIS].
+
+C&#x27;est [PAYS] qui diffusera le plus d&#x27;épisodes avec [NOMBRE] épisodes.
+
+C&#x27;est [CHAINE] qui diffusera le plus d&#x27;episodes avec [NOMBRE] épisodes.
+
+C&#x27;est [CHAINE] qui diffusera des épisodes pendant le plus grand nombre \
+de jours consécutifs avec [NOMBRE] de jours consécutifs.</code></pre><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1f87ab14-631a-480c-a839-53fc2c4849d7"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Une ressource utile : </strong>
+- <a href="https://www.tutorialspoint.com/python/python_command_line_arguments.htm">https://www.tutorialspoint.com/python/python_command_line_arguments.htm</a></div></figure></li></ul><p id="2a6e0d6d-2e47-4b27-912f-2738ab7b40d7" class="">
+</p><p id="8287e57f-0d1d-4b3e-877c-b6a9d3e98adf" class="">
+</p><p id="726dc496-a81b-48e8-a438-29db452e0bd3" class="">
+</p><p id="3c49c92b-1708-496d-8f5e-559c7d46f26c" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
