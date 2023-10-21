@@ -35,4 +35,6 @@ print(f"La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre 
 
 sql = SQLManager(episodes, conn)
 
+sql.drop_episode_table()
+print("Table episode supprimée avec succès")
 sql.save_to_postgres(episodes)

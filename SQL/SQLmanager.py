@@ -83,10 +83,6 @@ class SQLManager:
         if not self.table_exists(tb_episode):
             self.create_episode_table()
             print("Table episode créée avec succès")
-        else:
-            self.drop_episode_table()
-            print("Table episode supprimée avec succès")
-            
         if not self.table_exists(tb_duration):
             self.create_duration_table()
             print("Table duration créée avec succès")
@@ -127,7 +123,7 @@ class SQLManager:
         cur = conn.cursor()
         try :
             cur.execute('''
-                DROP TABLE duration
+                DROP TABLE episode
             ''')
             conn.commit()
 
