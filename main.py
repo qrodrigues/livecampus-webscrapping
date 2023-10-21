@@ -3,8 +3,9 @@ from Algorithmie.Algorithmie import Algorithmie
 from ManagerCSV.ManagerCSV import ManagerCSV
 
 base_url = "https://www.spin-off.fr"
+url = "/calendrier_des_series.html" + "?date=2023-10"
 
-scrapper = ScrapEpisodes(base_url, "/calendrier_des_series.html")
+scrapper = ScrapEpisodes(base_url, url)
 episodes = scrapper.getAllEpisodes()
 
 for episode in episodes:
