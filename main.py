@@ -1,9 +1,12 @@
 from webscrapper import ScrapEpisodes
 from Algorithmie.Algorithmie import Algorithmie
+from SQL.PostGreSQLmanager import PostGreSQLManager
+from SQL.SQLiteManager import SQLiteManager
 from ManagerCSV.ManagerCSV import ManagerCSV
 
 base_url = "https://www.spin-off.fr"
 url = "/calendrier_des_series.html" + "?date=2023-10" # ?date=2023-10 n'est pas obligatoire mais il permet d'assurer le mois d'octobre.
+conn = "postgres://course_pyth_8214:WCCU-NNiG777z2cwDPIp@course-pyth-8214.postgresql.a.osc-fr1.scalingo-dbs.com:33810/course_pyth_8214?sslmode=prefer"
 
 scrapper = ScrapEpisodes(base_url, url)
 episodes = scrapper.getAllEpisodes()
@@ -52,3 +55,19 @@ for index, word in enumerate(top_10_words):
 print('\n----  La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs ----')
 chaine_consecutive = algorithmie.findLongestConsecutiveDays(episodes)
 print(f"La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs est {chaine_consecutive[0]} avec {chaine_consecutive[1]} diffusions.")
+
+print('\n---- Gestion de PostgresSQL ----\n')
+#PostGreSQL
+pgsql = PostGreSQLManager(episodes, conn)
+
+pgsql.drop_tables()
+print("Suppression des tables Episode et Duration... ok")
+pgsql.save_to_postgres(episodes)
+
+print('\n---- Gestion de SQLite ----\n')
+#SQLite3
+sqlite = SQLiteManager(episodes)
+
+sqlite.drop_tables()
+print("Suppression des tables Episode et Duration... ok")
+sqlite.save_to_postgres(episodes)
