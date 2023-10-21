@@ -38,10 +38,10 @@ class ScrapEpisodes:
 
                     # Ajout de la durée si c'est la chaine et Apple TV+
                     duration = None
-                    if channel == 'Apple TV+':
-                        print('Récupération des données de la page ' + series_name + '...')
-                        duration = self.getEpisodeDuration(self.base_url, '/' + episode_url)
-                        time.sleep(1) # Attente d'une seconde pour ne pas spam le serveur web
+                    # if channel == 'Apple TV+':
+                    #     print('Récupération des données de la page ' + series_name + '...')
+                    #     duration = self.getEpisodeDuration(self.base_url, '/' + episode_url)
+                    #     time.sleep(1) # Attente d'une seconde pour ne pas spam le serveur web
 
                     episodes.append({
                         "air_date": str(date),
