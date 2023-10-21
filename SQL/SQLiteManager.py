@@ -102,11 +102,8 @@ class SQLiteManager:
                         if episode["duration"] is not None:
                             print(f"Identifiant de l'épisode : {episode_id}")
                             cur.execute("INSERT INTO duration (duration, episode_id) VALUES (?, ?)", (episode["duration"], episode_id))
-                            conn_lite.commit()
-                        else:
-                                cur.execute("INSERT INTO episode (air_date, origin_country, channel, series_name, episode_number, season_number, episode_url) VALUES (?, ?, ?, ?, ?, ?, ?)", 
-                                (episode["air_date"], episode["origin_country"], episode["channel"], episode["series_name"], episode["episode_number"], episode["season_number"], episode["episode_url"]))
-
+                            
+                    conn_lite.commit()
                 except sqlite3.Error as e:
                     conn_lite.rollback()
                     print("Erreur lors de l'insertion avec le champ duration :", e)
