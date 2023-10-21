@@ -2,9 +2,8 @@ import sqlite3
 
 conn_lite = sqlite3.connect("data/databases/database.db")
 class SQLiteManager:
-    def __init__(self, episodes, connexion):
+    def __init__(self, episodes):
         self.episodes = episodes
-        self.connexion = connexion
 
     def create_episode_table(self):
         cur = conn_lite.cursor()
@@ -100,9 +99,9 @@ class SQLiteManager:
                     episode_id = cur.lastrowid
                     if episode_id is not None:
                         if episode["duration"] is not None:
-                            cur.execute("INSERT INTO duration (duration, episode_id) VALUES (?, ?)", (episode["duration"], episode_id))
-                            
+                            cur.execute("INSERT INTO duration (duration, episode_id) VALUES (?, ?)", (episode["duration"], episode_id)) 
                     conn_lite.commit()
+
                 except sqlite3.Error as e:
                     conn_lite.rollback()
                     print("Erreur lors de l'insertion avec le champ duration :", e)
