@@ -100,7 +100,6 @@ class SQLiteManager:
                     episode_id = cur.lastrowid
                     if episode_id is not None:
                         if episode["duration"] is not None:
-                            print(f"Identifiant de l'épisode : {episode_id}")
                             cur.execute("INSERT INTO duration (duration, episode_id) VALUES (?, ?)", (episode["duration"], episode_id))
                             
                     conn_lite.commit()
