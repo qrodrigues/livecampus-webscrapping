@@ -26,21 +26,23 @@ class ManagerCSV() :
                 data_to_df.get("origin_country").append(episode.get("origin_country"))
                 data_to_df.get("channel").append(episode.get("channel"))
                 data_to_df.get("episode_url").append(episode.get("episode_url"))
-                data_to_df.get("duration").append(episode.get("duration"))
-                print(data_to_df)
-                return data_to_df
+                if episode.get("duration") is not None:
+                    data_to_df.get("duration").append(episode.get("duration"))
+                else : 
+
+                    data_to_df.get("duration").append("None")
+            return pd.DataFrame(data_to_df)
         except : 
             print("Erreur lors de la création du dataframe !")
             return None
         
 
 
-    def df_to_csv(self,datas,path_file) :
+    def df_to_csv(self,dataframe,path_file) :
         try :
-            df = pd.DataFrame(datas)
-            df.to_csv(path_file,sep=';')
+            dataframe.to_csv(path_file,sep=';')
             print("Fichier csv créé avec succès ! : ",path_file)
-            return path_file
+            return True
         except :
             print("Erreur lors de la création du fichier csv")
             return False
@@ -60,9 +62,12 @@ class ManagerCSV() :
                     pays = str(row[5])
                     chaine = str(row[6])
                     lien = str(row[7])
-                    duration = int(row[8])
-
-                    tup = (index, titre, saison, episode, date_diffusion, pays, chaine, lien)
+                    if row[8] == "None" : 
+                        duration = str(row[8])
+                    else : 
+                        duration = int(row[8])
+                    
+                    tup = (index, titre, saison, episode, date_diffusion, pays, chaine, lien,duration)
                     tuples.append(tup)
         except:
             print("Erreur lors de la lecture du fichier csv !", )
@@ -77,18 +82,17 @@ class ManagerCSV() :
                 "int" : "integer",
                 "str" : "string",
             }
-            # print(type(tup[8]).__name__)
-            # types = (
-            #     enum.get(type(tup[0]).__name__),
-            #     enum.get(type(tup[1]).__name__),
-            #     enum.get(type(tup[2]).__name__),
-            #     enum.get(type(tup[3]).__name__),
-            #     enum.get(type(tup[4]).__name__),
-            #     enum.get(type(tup[5]).__name__),
-            #     enum.get(type(tup[6]).__name__),
-            #     enum.get(type(tup[7]).__name__),
-            #     enum.get(type(tup[8]).__name__),
-            #     )
+            types = (
+                enum.get(type(tup[0]).__name__),
+                enum.get(type(tup[1]).__name__),
+                enum.get(type(tup[2]).__name__),
+                enum.get(type(tup[3]).__name__),
+                enum.get(type(tup[4]).__name__),
+                enum.get(type(tup[5]).__name__),
+                enum.get(type(tup[6]).__name__),
+                enum.get(type(tup[7]).__name__),
+                enum.get(type(tup[8]).__name__),
+                )
 
-            # types_tuples.append(types)
+            types_tuples.append(types)
         return types_tuples #Retourne une liste de tuples contenant les types des colonnes

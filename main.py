@@ -25,14 +25,23 @@ print(diffusions_countries_counter)
 print('\nTop 3 des pays les plus diffusées : ', top_3_countries)
 
 
-print('\n---- Gestion du CSV ---- \n')
+print('\n---- Gestion du CSV : Traitement ... ---- \n')
 csv_manager = ManagerCSV(episodes)
 csv_df = csv_manager.data_to_df()
-csv_manager.df_to_csv(csv_df,"../data/files/episodes.csv")
-csv_tuples = csv_manager.csv_to_tuples("../data/files/episodes.csv")
-csv8types = csv_manager.verify_types(csv_tuples)
+csv_manager.df_to_csv(csv_df,"./data/files/episodes.csv")
 
-# print('\n- Affichage des types des tuples : \n',csv8types)
+
+print('\n- Affichage des tuples depuis le CSV : \n')
+csv_tuples = csv_manager.csv_to_tuples("./data/files/episodes.csv")
+for tup in csv_tuples : 
+    print(tup)
+
+print('\n- Affichage des types des tuples : \n')
+csv_types = csv_manager.verify_types(csv_tuples)
+for typ in csv_types : 
+    print(typ)
+    
+print('\n---- Gestion du CSV : Fin du traitement ... ---- \n')
 
 print('\n---- 10 mots les plus présents dans les noms de séries ----')
 top_10_words = algorithmie.getTopSeriesWords(episodes, 10)
