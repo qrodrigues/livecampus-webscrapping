@@ -91,6 +91,7 @@ class SQLiteManager:
             self.create_duration_table()
             print("Table duration créée avec succès")
 
+        print('Sauvegarde des données...')
         try :
             for episode in episodes :
                 try:
