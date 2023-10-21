@@ -22,3 +22,24 @@ class Algorithmie:
         top_channels = sorted_channels[:quantity]
 
         return top_channels
+    
+    def getTopSeriesWords(self, episodes, quantity):
+        series_name_words = {}
+        
+        for episode in episodes:
+            series_name = episode.get('series_name')
+            words = series_name.split()  # Diviser le nom de la série en mots
+
+            for word in words:
+                if word in series_name_words:
+                    series_name_words[word] += 1
+                else:
+                    series_name_words[word] = 1
+
+        # Trier le dictionnaire en fonction du nombre d'occurrences des mots
+        sorted_words = sorted(series_name_words.items(), key=lambda x: x[1], reverse=True)
+
+        # Obtenir les dix mots les plus présents
+        top_words = sorted_words[:quantity]
+
+        return top_words
