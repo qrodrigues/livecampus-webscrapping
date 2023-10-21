@@ -3,7 +3,7 @@ import psycopg2
 DATABASE_URL = "postgres://course_pyth_8214:WCCU-NNiG777z2cwDPIp@course-pyth-8214.postgresql.a.osc-fr1.scalingo-dbs.com:33810/course_pyth_8214?sslmode=prefer"
 conn = psycopg2.connect(DATABASE_URL)
 
-class SQLManager:
+class PostGreSQLManager:
     def __init__(self, episodes, connexion):
         self.episodes = episodes
         self.connexion = connexion
@@ -22,8 +22,7 @@ class SQLManager:
                     episode_number INT NOT NULL,
                     season_number INT NOT NULL,
                     episode_url VARCHAR(255)
-        )
-            ''')
+        )''')
             conn.commit()
 
         except psycopg2.Error as e:
@@ -33,8 +32,6 @@ class SQLManager:
             # Fermer le curseur uniquement
             if conn:
                 cur.close()
-                # conn.close()
-                # print("Connexion fermée.")
 
     def drop_tables(self):
         cur = conn.cursor()
@@ -51,11 +48,8 @@ class SQLManager:
             print("Erreur lors de la suppression des tables ", e)
 
         finally:
-            # Fermer le curseur et la connexion
             if conn:
                 cur.close()
-                # conn.close()
-                # print("Connexion fermée.")
 
     def create_duration_table(self):
         cur = conn.cursor()
@@ -76,8 +70,6 @@ class SQLManager:
             # Fermer le curseur uniquement
             if conn:
                 cur.close()
-                # conn.close()
-                # print("Connexion fermée.")
 
     def table_exists(self, table_name):
         cursor = conn.cursor()
@@ -89,11 +81,8 @@ class SQLManager:
             print(f"Erreur lors de la recherche de la table {table_name} {e}")
 
         finally:
-            # Fermer le curseur uniquement
             if conn:
                 cursor.close()
-                # conn.close()
-                # print("Connexion fermée.")
 
     def save_to_postgres(self, episodes):
         cur = conn.cursor()
@@ -108,25 +97,19 @@ class SQLManager:
 
         try :
             for episode in episodes :
-                # if episode["duration"] is not None:
                 try:
                     cur.execute("INSERT INTO episode (air_date, origin_country, channel, series_name, episode_number, season_number, episode_url) VALUES (%s, %s, %s, %s, %s, %s, %s) RETURNING id", 
                                 (episode["air_date"], episode["origin_country"], episode["channel"], episode["series_name"], episode["episode_number"], episode["season_number"], episode["episode_url"]))
                     row = cur.fetchone()
                     if row is not None:
                         episode_id = row[0]
-
                         if episode["duration"] is not None:
                             cur.execute("INSERT INTO duration (duration, episode_id) VALUES (%s, %s)", (episode["duration"], episode_id))
-
-                        conn.commit()  # Valider la transaction ici
+                        conn.commit()
 
                 except psycopg2.Error as e:
-                    # conn.rollback()
+                    conn.rollback()
                     print("Erreur lors de l'insertion avec le champ duration :", e)
-                # else:
-                #     cur.execute("INSERT INTO episode (air_date, origin_country, channel, series_name, episode_number, season_number, episode_url) VALUES (%s, %s, %s, %s, %s, %s, %s)", (episode["air_date"], episode["origin_country"], episode["channel"], episode["series_name"], episode["episode_number"], episode["season_number"], episode["episode_url"]))
-                # conn.commit()
 
         except psycopg2.Error as e:
             print("Erreur lors de l'insertion :", e)
