@@ -1,9 +1,7 @@
 import psycopg2
 
-DATABASE_URL= "postgres://livecampus__5939:JfiEu3Ss_4at2Iz3u9be@livecampus--5939.postgresql.a.osc-fr1.scalingo-dbs.com:33846/livecampus__5939?sslmode=prefer"
-DB_URL_PAUL = "postgres://course_pyth_8214:WCCU-NNiG777z2cwDPIp@course-pyth-8214.postgresql.a.osc-fr1.scalingo-dbs.com:33810/course_pyth_8214?sslmode=prefer"
-# conn = psycopg2.connect(DATABASE_URL)
-conn = psycopg2.connect(DB_URL_PAUL)
+DATABASE_URL = "postgres://course_pyth_8214:WCCU-NNiG777z2cwDPIp@course-pyth-8214.postgresql.a.osc-fr1.scalingo-dbs.com:33810/course_pyth_8214?sslmode=prefer"
+conn = psycopg2.connect(DATABASE_URL)
 
 class SQLManager:
     def __init__(self, episodes, connexion):
@@ -38,6 +36,27 @@ class SQLManager:
                 # conn.close()
                 # print("Connexion fermée.")
 
+    def drop_tables(self):
+        cur = conn.cursor()
+        try :
+            cur.execute('''
+                DROP TABLE duration
+            ''')
+            cur.execute('''
+                DROP TABLE episode
+            ''')
+            conn.commit()
+
+        except psycopg2.Error as e:
+            print("Erreur lors de la suppression des tables ", e)
+
+        finally:
+            # Fermer le curseur et la connexion
+            if conn:
+                cur.close()
+                # conn.close()
+                # print("Connexion fermée.")
+
     def create_duration_table(self):
         cur = conn.cursor()
         try :
@@ -51,7 +70,7 @@ class SQLManager:
             conn.commit()
 
         except psycopg2.Error as e:
-            print(e)
+            print("Erreur lors de la creation de la table duration ", e)
 
         finally:
             # Fermer le curseur uniquement
@@ -118,21 +137,3 @@ class SQLManager:
                 cur.close()
                 conn.close()
                 print("Connexion fermée.")
-
-    def drop_episode_table(self):
-        cur = conn.cursor()
-        try :
-            cur.execute('''
-                DROP TABLE episode
-            ''')
-            conn.commit()
-
-        except psycopg2.Error as e:
-            print("Erreur lors de la suppression", e)
-
-        finally:
-            # Fermer le curseur et la connexion
-            if conn:
-                cur.close()
-                # conn.close()
-                # print("Connexion fermée.")
