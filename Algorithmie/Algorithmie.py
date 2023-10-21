@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Algorithmie:
     def __init__(self) -> None:
         pass
@@ -43,3 +45,31 @@ class Algorithmie:
         top_words = sorted_words[:quantity]
 
         return top_words
+    
+    def findLongestConsecutiveDays(self, episodes):
+        max_consecutive_days = 0
+        current_consecutive_days = 0
+        current_channel = None
+        previous_date = None
+        result = None
+
+        for episode in episodes:
+            air_date = episode.get('air_date')
+            channel = episode.get('channel')
+
+            if previous_date is not None:
+                current_date = datetime.strptime(air_date, '%d-%m-%Y')
+
+                if (current_date - previous_date).days == 1 and current_channel == channel:
+                    current_consecutive_days += 1
+                else:
+                    current_consecutive_days = 1
+
+                if current_consecutive_days > max_consecutive_days:
+                    max_consecutive_days = current_consecutive_days
+                    result = (current_channel, max_consecutive_days)
+
+            current_channel = channel
+            previous_date = datetime.strptime(air_date, '%d-%m-%Y')
+
+        return result

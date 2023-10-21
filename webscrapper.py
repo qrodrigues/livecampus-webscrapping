@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-from datetime import datetime
 
 class ScrapEpisodes:
     def __init__(self, base_url, url):
@@ -61,31 +60,3 @@ class ScrapEpisodes:
         page = self.getSourceCode(url)
         duration = page.find("div", class_="episode_infos_episode_format").text.split('minutes')[0]
         return int(duration)
-    
-    def findLongestConsecutiveDays(self, episodes):
-        max_consecutive_days = 0
-        current_consecutive_days = 0
-        current_channel = None
-        previous_date = None
-        result = None
-
-        for episode in episodes:
-            air_date = episode.get('air_date')
-            channel = episode.get('channel')
-
-            if previous_date is not None:
-                current_date = datetime.strptime(air_date, '%d-%m-%Y')
-
-                if (current_date - previous_date).days == 1 and current_channel == channel:
-                    current_consecutive_days += 1
-                else:
-                    current_consecutive_days = 1
-
-                if current_consecutive_days > max_consecutive_days:
-                    max_consecutive_days = current_consecutive_days
-                    result = (current_channel, max_consecutive_days)
-
-            current_channel = channel
-            previous_date = datetime.strptime(air_date, '%d-%m-%Y')
-
-        return result
