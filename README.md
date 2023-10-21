@@ -1,18 +1,28 @@
 # Evaluation : Python
+# Introduction
+Dans le cadre de notre formation développeur fullstack, nous avons développer en python pour réaliser du Webscrapping. De plus, nous avons utilisé des bases de données pour stocker ces données, ainsi que des algorithmes pour étudier nos données.
+
+Le groupe est constitué de :  
+Rodrigues Quentin  
+Roche Sébastien  
+Singh Paul
+
+ # Général
+ Vous trouverez dans ce code source un fichier **main.py**, il permet d'utiliser chacune des fonctions de l'application, et d'écrire dans la console des informations pendant l'exécution.
+
+ Il existe également un fichier **summarize_episodes.py**, celui-ci permet d'exécuter une commande directement depuis un terminal, elle est expliquée dans la partie **Orchestration**.
+
 ```
 Expliquer la phrase :
  “Pensez à bien utiliser cette commande dans le même terminal que celui que vous utilisez pour exécuter vos fichiers .py.“
 ```
-La phrase mentionne l'importance d'executer la commande pour afficher les versions utilisées dans le même terminal que là où à lieu l'exécution des scripts python.
+La phrase mentionne l'importance d'executer la commande pour afficher les versions utilisées dans le même terminal que là où a lieu l'exécution des scripts python.
 
-En effet, pour être sûr que les versions utilisées pour l'exécution, et celles indiquées par la commande soient les mêmes, il faut être dans le même terminal.
+En effet, il est important d'exécuter la commande pour afficher les versions utilisées, dans le même terminal qu'à l'endroit ou nous exécutons nos scripts.
 
 Par exemple, en créant un nouveau terminal, nous perdons l'utilisation de l'environnement python si on utilise pas le script "activate". Ainsi, les versions différentes peuvent empêcher le code de bien fonctionner.
 
-De plus, si on développe sur un version de python qui n'est pas la bonne, nous pouvons détruire une partie de notre système, qui utilise python.
-
- # Général
- 
+De plus, si on développe sur une version de python qui n'est pas la bonne, nous pouvons détruire une partie de notre système, qui utilise python.
 
  # Scrapping [1/2]
  Pour le scrapping, nous avons choisi de créer une class nommée webscrapper. Qui est utilisable de cette manière :
@@ -87,3 +97,23 @@ Il y a beaucoup de chaîne de TV qui diffuse 2 jours consécutifs, c'est le maxi
 
 # SQL [1/2]
 # SQL [2/2]
+
+# Orchestration
+Nous avons réaliser la partie Orchestration, ainsi il est possible d'exécuter le fichier **summarize_episodes.py** depuis la console de cette manière :
+```
+python3 summarize_episodes.py --month 11
+```
+
+Cette commande prend en paramètre le mois, compris entre 1 et 12. Ainsi, elle retournera pour l'année 2023, les épisodes du mois choisi.
+
+Elle va retourner ces informations :
+```
+[NOMBRE] episodes seront diffusés pendant le mois de [MOIS].
+
+C'est [PAYS] qui diffusera le plus d'épisodes avec [NOMBRE] épisodes.
+
+C'est [CHAINE] qui diffusera le plus d'episodes avec [NOMBRE] épisodes.
+
+C'est [CHAINE] qui diffusera des épisodes pendant le plus grand nombre \
+de jours consécutifs avec [NOMBRE] de jours consécutifs.
+```
