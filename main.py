@@ -1,5 +1,6 @@
 from webscrapper import ScrapEpisodes
 from Algorithmie.Algorithmie import Algorithmie
+from SQL.SQLmanager import SQLManager
 
 scrapper = ScrapEpisodes("https://www.spin-off.fr/calendrier_des_series.html")
 episodes = scrapper.getAllEpisodes()
@@ -21,3 +22,5 @@ print('\nTop 3 des chaînes les plus diffusées : ', top_3_channels)
 print('\n---- Nombre de difussion(s) par pays ----\n')
 print(diffusions_countries_counter)
 print('\nTop 3 des pays les plus diffusées : ', top_3_countries)
+
+sql = SQLManager(episodes)
