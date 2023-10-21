@@ -2,7 +2,7 @@ from webscrapper import ScrapEpisodes
 from Algorithmie.Algorithmie import Algorithmie
 
 base_url = "https://www.spin-off.fr"
-url = "/calendrier_des_series.html" + "?date=2023-10"
+url = "/calendrier_des_series.html" + "?date=2023-10" # ?date=2023-10 n'est pas obligatoire mais il permet d'assurer le mois d'octobre.
 
 scrapper = ScrapEpisodes(base_url, url)
 episodes = scrapper.getAllEpisodes()
