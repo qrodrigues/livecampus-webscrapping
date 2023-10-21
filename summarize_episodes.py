@@ -23,7 +23,7 @@ def scrapData(month):
         str_month = "0" + str_month
 
     url = "/calendrier_des_series.html" + "?date=2023-" + str_month
-    
+
     scrapper = ScrapEpisodes(base_url, url)
     episodes = scrapper.getAllEpisodes()
     
@@ -42,7 +42,7 @@ def scrapData(month):
     print(f"C'est {top_channel[0]} qui diffusera le plus d'épisodes avec {top_channel[1]} épisodes.")
 
     # TOP Nombre de jour consecutif
-    chaine_consecutive = scrapper.findLongestConsecutiveDays(episodes)
+    chaine_consecutive = algorithmie.findLongestConsecutiveDays(episodes)
     print(f"C'est {chaine_consecutive[0]} qui diffusera des épisodes pendant le plus grand nombre \
 de jours consécutifs avec {chaine_consecutive[1]} de jours consécutifs.")
 

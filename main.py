@@ -50,5 +50,5 @@ for index, word in enumerate(top_10_words):
     print(f"{index + 1} - \"{word[0]}\" utilisé {word[1]} fois.")
 
 print('\n----  La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs ----')
-chaine_consecutive = scrapper.findLongestConsecutiveDays(episodes)
+chaine_consecutive = algorithmie.findLongestConsecutiveDays(episodes)
 print(f"La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs est {chaine_consecutive[0]} avec {chaine_consecutive[1]} diffusions.")
