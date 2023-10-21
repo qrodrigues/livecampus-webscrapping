@@ -4,9 +4,9 @@ Dans le cadre de notre formation développeur fullstack, nous avons développer 
 
 Le sujet est présent dans le dossier **/docs**.
 
-Nous avons fait le choix de travailler avec un environnement python, mais vous retrouverez quand même les versions des packages et de python dans les fichiers **requirements.txt** et **runtime.txt**.
+Nous avons fait le choix de travailler avec un environnement python, mais vous retrouverez quand même les versions des packages et de python dans les fichiers **requirements.txt** et **runtime.txt**, dans le dossier **/packages**.
 
-Il y a également un fichier notebook **sandbox_csv.ipynb**, il nous a permi de développer à l'aide de notebook dans le cadre du csv.
+Il y a également un fichier notebook **sandbox_csv.ipynb**, il nous a permis de développer à l'aide de notebook dans le cadre du csv.
 
 Le groupe est constitué de :  
 - Rodrigues Quentin  
