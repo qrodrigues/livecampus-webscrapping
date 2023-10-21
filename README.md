@@ -2,10 +2,16 @@
 # Introduction
 Dans le cadre de notre formation développeur fullstack, nous avons développer en python pour réaliser du Webscrapping. De plus, nous avons utilisé des bases de données pour stocker ces données, ainsi que des algorithmes pour étudier nos données.
 
+Le sujet est présent dans le dossier **/docs**.
+
+Nous avons fait le choix de travailler avec un environnement python, mais vous retrouverez quand même les versions des packages et de python dans les fichiers **requirements.txt** et **runtime.txt**.
+
+Il y a également un fichier notebook **sandbox_csv.ipynb**, il nous a permi de développer à l'aide de notebook dans le cadre du csv.
+
 Le groupe est constitué de :  
-Rodrigues Quentin  
-Roche Sébastien  
-Singh Paul
+- Rodrigues Quentin  
+- Roche Sébastien  
+- Singh Paul
 
  # Général
  Vous trouverez dans ce code source un fichier **main.py**, il permet d'utiliser chacune des fonctions de l'application, et d'écrire dans la console des informations pendant l'exécution.
