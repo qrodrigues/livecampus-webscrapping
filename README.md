@@ -67,13 +67,15 @@ getEpisodeDuration () : permet d'obtenir la durée d'un épisode en scrappant sa
 ```
 
 # Fichier CSV
-Pour répondre aux différentes questions concernant le traitement des données en fichier CSV, tout se fait grace à la class ManavagerCSV, qui est située dans ManagerCSV. 
+Pour répondre aux différentes questions concernant le traitement des données en fichier CSV, tout se fait grâce à la class ManavagerCSV, qui est située dans ManagerCSV. 
 
 La class présente 4 méthodes : 
-- data_to_df ( ) : Convertie la liste d'épisode en Dataframe
-- df_to_csv ( dataframe ) : Exporte le Dataframe en csv
-- csv_to_tuples ( fichier_csv ) : Récupère les données du csv et les transforme en tuples
-- verify_types( tuples ) : Retourne sous une liste de tuples l'ensemble des types des tuples
+- ```data_to_df ( )``` : Convertie la liste d'épisode en Dataframe
+- ```df_to_csv ( dataframe )``` : Exporte le Dataframe en csv
+- ```csv_to_tuples ( fichier_csv )``` : Récupère les données du csv et les transforme en tuples
+- ```verify_types( tuples )``` : Retourne sous une liste de tuples l'ensemble des types des tuples
+
+Pour exécuter l'ensemble de ses fonctions, il suffit d'executer le main.py (dans l'environnement python). Un fichier csv (```data/files/episodes.csv```) sera alors créé, il est remplacé à chaque exécution.
 
 L'ensemble des expérimentations lors du développement de ces fonctions se situe dans le notebook de test ```sandbox_csv.ipynb```
 
@@ -169,7 +171,7 @@ connection to server at "livecampus--5939.postgresql.a.osc-fr1.scalingo-dbs.com"
 ``` 
 
 # Conclusion
-Ce projet fut très enrichissant, car il nous a tout d'abord permet de travail en équipe. Mais également de nous améliorer voire pseudo découvrir le langague python via beaucoup d'algorythmie. De plus, le projet nous a permis de voir pas mal d'utilisation de python différente, se qui montrer polyvalance et sa force. 
+Ce projet fut très enrichissant, car il nous a tout d'abord permis de travailler en équipe, mais également de nous améliorer, voire pour certains de pseudo-découvrir le langage python via beaucoup d'algorithmie. De plus, le projet nous a permis de voir pas mal d'utilisation de python différente, ce qui nous montre sa polyvalance et sa force. 
 
 ---
 Rodrigues Quentin - Roche Sébastien - Singh Paul - Livecampus 2023
