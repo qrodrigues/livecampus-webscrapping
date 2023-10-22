@@ -34,7 +34,6 @@ csv_manager = ManagerCSV(episodes)
 csv_df = csv_manager.data_to_df()
 csv_manager.df_to_csv(csv_df,"./data/files/episodes.csv")
 
-
 print('\n- Affichage des tuples depuis le CSV : \n')
 csv_tuples = csv_manager.csv_to_tuples("./data/files/episodes.csv")
 for tup in csv_tuples : 

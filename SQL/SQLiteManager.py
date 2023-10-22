@@ -1,7 +1,7 @@
 import sqlite3
 
 conn_lite = sqlite3.connect("data/databases/database.db")
-class SQLiteManager:
+class SQLiteManager():
     def __init__(self, episodes):
         self.episodes = episodes
 

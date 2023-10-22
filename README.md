@@ -1,4 +1,4 @@
-# Evaluation : Python
+# LiveCampus Evaluation : Python
 # Introduction
 Dans le cadre de notre formation développeur fullstack, nous avons développer en python pour réaliser du Webscrapping. De plus, nous avons utilisé des bases de données pour stocker ces données, ainsi que des algorithmes pour étudier nos données.
 
@@ -67,7 +67,15 @@ getEpisodeDuration () : permet d'obtenir la durée d'un épisode en scrappant sa
 ```
 
 # Fichier CSV
-Doc fichier csv...
+Pour répondre aux différentes questions concernant le traitement des données en fichier CSV, tout se fait grace à la class ManavagerCSV, qui est située dans ManagerCSV. 
+
+La class présente 4 méthodes : 
+- data_to_df ( ) : Convertie la liste d'épisode en Dataframe
+- df_to_csv ( dataframe ) : Exporte le Dataframe en csv
+- csv_to_tuples ( fichier_csv ) : Récupère les données du csv et les transforme en tuples
+- verify_types( tuples ) : Retourne sous une liste de tuples l'ensemble des types des tuples
+
+L'ensemble des expérimentations lors du développement de ces fonctions se situe dans le notebook de test ```sandbox_csv.ipynb```
 
  # Algorithmie [1/2]
 ```
@@ -152,8 +160,16 @@ C'est [CHAINE] qui diffusera des épisodes pendant le plus grand nombre \
 de jours consécutifs avec [NOMBRE] de jours consécutifs.
 ```
 
-## Remarque :
+# Remarque :
+
+
 Avant d'aborder le sujet, nous avons rencontré des problèmes concernant l'accès à la base de données distante de Scalingo. En effet, nous avons eu cette erreur : 
 ```
 connection to server at "livecampus--5939.postgresql.a.osc-fr1.scalingo-dbs.com" (5.104.103.28), port 33846 failed: FATAL:  remaining connection slots are reserved for non-replication superuser connections
 ``` 
+
+# Conclusion
+Ce projet fut très enrichissant, car il nous a tout d'abord permet de travail en équipe. Mais également de nous améliorer voire pseudo découvrir le langague python via beaucoup d'algorythmie. De plus, le projet nous a permis de voir pas mal d'utilisation de python différente, se qui montrer polyvalance et sa force. 
+
+---
+Rodrigues Quentin - Roche Sébastien - Singh Paul - Livecampus 2023
