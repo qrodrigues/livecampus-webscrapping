@@ -61,13 +61,13 @@
 59;Hans River Police;8;1;04-10-2023;Etats-Unis;Disney+;episode08-409973-04102023-saison1-Hans-River-Police.html;None
 60;Hudson & Rex;1;6;04-10-2023;Canada;Citytv;episode01-410258-04102023-saison6-Hudson--Rex.html;None
 61;Ici tout commence;28;4;04-10-2023;France;TF1;episode28-410917-04102023-saison4-Ici-tout-commence.html;None
-62;Invasion (2021);7;2;04-10-2023;Etats-Unis;Apple TV+;episode07-407971-04102023-saison2-Invasion-(2021).html;None
+62;Invasion (2021);7;2;04-10-2023;Etats-Unis;Apple TV+;episode07-407971-04102023-saison2-Invasion-(2021).html;52
 63;Magnum P.I. (2018);11;5;04-10-2023;Etats-Unis;NBC;episode11-409152-04102023-saison5-Magnum-PI-(2018).html;None
 64;Quantum Leap (2022);1;2;04-10-2023;Etats-Unis;NBC;episode01-408633-04102023-saison2-Quantum-Leap-(2022).html;None
 65;RFDS;8;2;04-10-2023;Australie;Seven;episode08-410739-04102023-saison2-RFDS.html;None
 66;Robyn Hood;2;1;04-10-2023;Canada;Global;episode02-410949-04102023-saison1-Robyn-Hood.html;None
 67;SurrealEstate;1;2;04-10-2023;Etats-Unis;Syfy;episode01-409249-04102023-saison2-SurrealEstate.html;None
-68;The Morning Show;5;3;04-10-2023;Etats-Unis;Apple TV+;episode05-407700-04102023-saison3-The-Morning-Show.html;None
+68;The Morning Show;5;3;04-10-2023;Etats-Unis;Apple TV+;episode05-407700-04102023-saison3-The-Morning-Show.html;50
 69;The Worst of Evil;4;1;04-10-2023;Etats-Unis;Disney+;episode04-410766-04102023-saison1-The-Worst-of-Evil.html;None
 70;The Worst of Evil;5;1;04-10-2023;Etats-Unis;Disney+;episode05-410767-04102023-saison1-The-Worst-of-Evil.html;None
 71;Un Si Grand Soleil;25;6;04-10-2023;France;France 2;episode25-410927-04102023-saison6-Un-Si-Grand-Soleil.html;None
@@ -138,8 +138,8 @@
 136;Shoresy;3;2;06-10-2023;Canada;CraveTV;episode03-410866-06102023-saison2-Shoresy.html;None
 137;SOKO Leipzig;7;24;06-10-2023;Allemagne;ZDF;episode07-410561-06102023-saison24-SOKO-Leipzig.html;None
 138;Solsidan;3;8;06-10-2023;Suède;TV4;episode03-410858-06102023-saison8-Solsidan.html;None
-139;Still Up;5;1;06-10-2023;Etats-Unis;Apple TV+;episode05-408946-06102023-saison1-Still-Up.html;None
-140;The Changeling;7;1;06-10-2023;Etats-Unis;Apple TV+;episode07-408182-06102023-saison1-The-Changeling.html;None
+139;Still Up;5;1;06-10-2023;Etats-Unis;Apple TV+;episode05-408946-06102023-saison1-Still-Up.html;45
+140;The Changeling;7;1;06-10-2023;Etats-Unis;Apple TV+;episode07-408182-06102023-saison1-The-Changeling.html;50
 141;The Continental: From The World Of John Wick;3;1;06-10-2023;Etats-Unis;Peacock;episode03-408644-06102023-saison1-The-Continental-From-The-World-Of-John-Wick.html;None
 142;The Wheel of Time;8;2;06-10-2023;Etats-Unis;Prime Video;episode08-408196-06102023-saison2-The-Wheel-of-Time.html;None
 143;Transplant;1;4;06-10-2023;Canada;CTV;episode01-408389-06102023-saison4-Transplant.html;None
@@ -204,7 +204,7 @@
 202;Hans River Police;10;1;11-10-2023;Etats-Unis;Disney+;episode10-409975-11102023-saison1-Hans-River-Police.html;None
 203;Hudson & Rex;2;6;11-10-2023;Canada;Citytv;episode02-410259-11102023-saison6-Hudson--Rex.html;None
 204;Ici tout commence;33;4;11-10-2023;France;TF1;episode33-411040-11102023-saison4-Ici-tout-commence.html;None
-205;Invasion (2021);8;2;11-10-2023;Etats-Unis;Apple TV+;episode08-407972-11102023-saison2-Invasion-(2021).html;None
+205;Invasion (2021);8;2;11-10-2023;Etats-Unis;Apple TV+;episode08-407972-11102023-saison2-Invasion-(2021).html;52
 206;La Mesias;1;1;11-10-2023;Espagne;Moviestar+;episode01-410340-11102023-saison1-La-Mesias.html;None
 207;La Mesias;2;1;11-10-2023;Espagne;Moviestar+;episode02-410544-11102023-saison1-La-Mesias.html;None
 208;Magnum P.I. (2018);12;5;11-10-2023;Etats-Unis;NBC;episode12-410783-11102023-saison5-Magnum-PI-(2018).html;None
@@ -234,7 +234,7 @@
 232;Quantum Leap (2022);2;2;11-10-2023;Etats-Unis;NBC;episode02-409735-11102023-saison2-Quantum-Leap-(2022).html;None
 233;Robyn Hood;3;1;11-10-2023;Canada;Global;episode03-410950-11102023-saison1-Robyn-Hood.html;None
 234;SurrealEstate;2;2;11-10-2023;Etats-Unis;Syfy;episode02-410804-11102023-saison2-SurrealEstate.html;None
-235;The Morning Show;6;3;11-10-2023;Etats-Unis;Apple TV+;episode06-407701-11102023-saison3-The-Morning-Show.html;None
+235;The Morning Show;6;3;11-10-2023;Etats-Unis;Apple TV+;episode06-407701-11102023-saison3-The-Morning-Show.html;50
 236;The Worst of Evil;6;1;11-10-2023;Etats-Unis;Disney+;episode06-410768-11102023-saison1-The-Worst-of-Evil.html;None
 237;The Worst of Evil;7;1;11-10-2023;Etats-Unis;Disney+;episode07-410769-11102023-saison1-The-Worst-of-Evil.html;None
 238;Un Si Grand Soleil;28;6;11-10-2023;France;France 2;episode28-411044-11102023-saison6-Un-Si-Grand-Soleil.html;None
@@ -300,15 +300,15 @@
 298;Goosebumps (2023);5;1;13-10-2023;Etats-Unis;Disney+;episode05-409982-13102023-saison1-Goosebumps-(2023).html;None
 299;Ici tout commence;35;4;13-10-2023;France;TF1;episode35-411042-13102023-saison4-Ici-tout-commence.html;None
 300;John Carpenter's Suburban Screams;1;1;13-10-2023;Etats-Unis;Peacock;episode01-410425-13102023-saison1-John-Carpenter-s-Suburban-Screams.html;None
-301;Lessons In Chemistry;1;1;13-10-2023;Etats-Unis;Apple TV+;episode01-406597-13102023-saison1-Lessons-In-Chemistry.html;None
-302;Lessons In Chemistry;2;1;13-10-2023;Etats-Unis;Apple TV+;episode02-406598-13102023-saison1-Lessons-In-Chemistry.html;None
+301;Lessons In Chemistry;1;1;13-10-2023;Etats-Unis;Apple TV+;episode01-406597-13102023-saison1-Lessons-In-Chemistry.html;54
+302;Lessons In Chemistry;2;1;13-10-2023;Etats-Unis;Apple TV+;episode02-406598-13102023-saison1-Lessons-In-Chemistry.html;54
 303;Power Book IV: Force;7;2;13-10-2023;Etats-Unis;Starz;episode07-410802-13102023-saison2-Power-Book-IV-Force.html;None
 304;Shining Vale;1;2;13-10-2023;Etats-Unis;Starz;episode01-409054-13102023-saison2-Shining-Vale.html;None
 305;Shoresy;4;2;13-10-2023;Canada;CraveTV;episode04-410867-13102023-saison2-Shoresy.html;None
 306;SOKO Leipzig;8;24;13-10-2023;Allemagne;ZDF;episode08-410562-13102023-saison24-SOKO-Leipzig.html;None
 307;Solsidan;4;8;13-10-2023;Suède;TV4;episode04-411053-13102023-saison8-Solsidan.html;None
-308;Still Up;6;1;13-10-2023;Etats-Unis;Apple TV+;episode06-408947-13102023-saison1-Still-Up.html;None
-309;The Changeling;8;1;13-10-2023;Etats-Unis;Apple TV+;episode08-408183-13102023-saison1-The-Changeling.html;None
+308;Still Up;6;1;13-10-2023;Etats-Unis;Apple TV+;episode06-408947-13102023-saison1-Still-Up.html;45
+309;The Changeling;8;1;13-10-2023;Etats-Unis;Apple TV+;episode08-408183-13102023-saison1-The-Changeling.html;50
 310;The Good Ship Murder;1;1;13-10-2023;Royaume-Uni;Channel 5;episode01-410952-13102023-saison1-The-Good-Ship-Murder.html;None
 311;Transplant;2;4;13-10-2023;Canada;CTV;episode02-409737-13102023-saison4-Transplant.html;None
 312;Un Si Grand Soleil;30;6;13-10-2023;France;France 2;episode30-411046-13102023-saison6-Un-Si-Grand-Soleil.html;None
@@ -350,7 +350,7 @@
 348;Chucky;3;3;18-10-2023;Etats-Unis;Syfy;episode03-409116-18102023-saison3-Chucky.html;None
 349;Cooper's Bar;3;2;18-10-2023;Etats-Unis;AMC;episode03-411063-18102023-saison2-Cooper-s-Bar.html;None
 350;Hudson & Rex;3;6;18-10-2023;Canada;Citytv;episode03-411097-18102023-saison6-Hudson--Rex.html;None
-351;Invasion (2021);9;2;18-10-2023;Etats-Unis;Apple TV+;episode09-407973-18102023-saison2-Invasion-(2021).html;None
+351;Invasion (2021);9;2;18-10-2023;Etats-Unis;Apple TV+;episode09-407973-18102023-saison2-Invasion-(2021).html;52
 352;Kaala Paani;1;1;18-10-2023;Etats-Unis;Netflix;episode01-410946-18102023-saison1-Kaala-Paani.html;None
 353;Kaala Paani;2;1;18-10-2023;Etats-Unis;Netflix;episode02-411286-18102023-saison1-Kaala-Paani.html;None
 354;Kaala Paani;3;1;18-10-2023;Etats-Unis;Netflix;episode03-411287-18102023-saison1-Kaala-Paani.html;None
@@ -369,7 +369,7 @@
 367;Robyn Hood;4;1;18-10-2023;Canada;Global;episode04-410951-18102023-saison1-Robyn-Hood.html;None
 368;Sistas;12;6;18-10-2023;Etats-Unis;BET;episode12-410186-18102023-saison6-Sistas.html;None
 369;SurrealEstate;3;2;18-10-2023;Etats-Unis;Syfy;episode03-410882-18102023-saison2-SurrealEstate.html;None
-370;The Morning Show;7;3;18-10-2023;Etats-Unis;Apple TV+;episode07-407702-18102023-saison3-The-Morning-Show.html;None
+370;The Morning Show;7;3;18-10-2023;Etats-Unis;Apple TV+;episode07-407702-18102023-saison3-The-Morning-Show.html;50
 371;The Worst of Evil;8;1;18-10-2023;Etats-Unis;Disney+;episode08-410770-18102023-saison1-The-Worst-of-Evil.html;None
 372;The Worst of Evil;9;1;18-10-2023;Etats-Unis;Disney+;episode09-410771-18102023-saison1-The-Worst-of-Evil.html;None
 373;Young Dylan;7;4;18-10-2023;Etats-Unis;Nickelodeon;episode07-410806-18102023-saison4-Young-Dylan.html;None
@@ -457,11 +457,11 @@
 455;Familjen Andersson;10;1;20-10-2023;Suède;SVT Play;episode10-409541-20102023-saison1-Familjen-Andersson.html;None
 456;Gen V;6;1;20-10-2023;Etats-Unis;Prime Video;episode06-408430-20102023-saison1-Gen-V.html;None
 457;Goosebumps (2023);6;1;20-10-2023;Etats-Unis;Disney+;episode06-409983-20102023-saison1-Goosebumps-(2023).html;None
-458;Lessons In Chemistry;3;1;20-10-2023;Etats-Unis;Apple TV+;episode03-406599-20102023-saison1-Lessons-In-Chemistry.html;None
+458;Lessons In Chemistry;3;1;20-10-2023;Etats-Unis;Apple TV+;episode03-406599-20102023-saison1-Lessons-In-Chemistry.html;54
 459;Power Book IV: Force;8;2;20-10-2023;Etats-Unis;Starz;episode08-410987-20102023-saison2-Power-Book-IV-Force.html;None
 460;Shining Vale;2;2;20-10-2023;Etats-Unis;Starz;episode02-411122-20102023-saison2-Shining-Vale.html;None
 461;SOKO Leipzig;9;24;20-10-2023;Allemagne;ZDF;episode09-410563-20102023-saison24-SOKO-Leipzig.html;None
-462;Still Up;7;1;20-10-2023;Etats-Unis;Apple TV+;episode07-408948-20102023-saison1-Still-Up.html;None
+462;Still Up;7;1;20-10-2023;Etats-Unis;Apple TV+;episode07-408948-20102023-saison1-Still-Up.html;45
 463;The Good Ship Murder;2;1;20-10-2023;Royaume-Uni;Channel 5;episode02-410953-20102023-saison1-The-Good-Ship-Murder.html;None
 464;Transplant;3;4;20-10-2023;Canada;CTV;episode03-409839-20102023-saison4-Transplant.html;None
 465;Upload;1;3;20-10-2023;Etats-Unis;Prime Video;episode01-410010-20102023-saison3-Upload.html;None
@@ -474,111 +474,113 @@
 472;Yaratilan;6;1;20-10-2023;Etats-Unis;Netflix;episode06-411331-20102023-saison1-Yaratilan.html;None
 473;Yaratilan;7;1;20-10-2023;Etats-Unis;Netflix;episode07-411332-20102023-saison1-Yaratilan.html;None
 474;Yaratilan;8;1;20-10-2023;Etats-Unis;Netflix;episode08-411333-20102023-saison1-Yaratilan.html;None
-475;Billy the Kid;2;2;22-10-2023;Etats-Unis;Epix;episode02-409588-22102023-saison2-Billy-the-Kid.html;None
-476;Bob's Burgers;3;14;22-10-2023;Etats-Unis;Fox;episode03-410885-22102023-saison14-Bob-s-Burgers.html;None
-477;Entre Tierras;7;1;22-10-2023;Espagne;ATRESplayer;episode07-410973-22102023-saison1-Entre-Tierras.html;None
-478;Family Guy;3;22;22-10-2023;Etats-Unis;Fox;episode03-410998-22102023-saison22-Family-Guy.html;None
-479;Fear the Walking Dead;7;8;22-10-2023;Etats-Unis;AMC;episode07-408754-22102023-saison8-Fear-the-Walking-Dead.html;None
-480;Heartland (CA);4;17;22-10-2023;Canada;CBC;episode04-410871-22102023-saison17-Heartland-(CA).html;None
-481;Krapopolis;5;1;22-10-2023;Etats-Unis;Fox;episode05-410699-22102023-saison1-Krapopolis.html;None
-482;Les Mystères de l'amour;11;33;22-10-2023;France;TMC;episode11-410883-22102023-saison33-Les-Mysteres-de-l-amour.html;None
-483;Rick and Morty;2;7;22-10-2023;Etats-Unis;Adult Swim;episode02-410175-22102023-saison7-Rick-and-Morty.html;None
-484;SkyMed;4;2;22-10-2023;Canada;CBC Gem;episode04-411101-22102023-saison2-SkyMed.html;None
-485;The Simpsons;3;35;22-10-2023;Etats-Unis;Fox;episode03-410884-22102023-saison35-The-Simpsons.html;None
-486;The Villains of Valley View;17;2;22-10-2023;Etats-Unis;Disney Channel;episode17-411283-22102023-saison2-The-Villains-of-Valley-View.html;None
-487;The Winter King;8;1;22-10-2023;Royaume-Uni;ITVX;episode08-409134-22102023-saison1-The-Winter-King.html;None
-488;30 Monedas;1;2;23-10-2023;Europe;HBO Europe;episode01-410606-23102023-saison2-30-Monedas.html;None
-489;5è Rang;7;6;23-10-2023;Canada;Radio Canada;episode07-411293-23102023-saison6-5e-Rang.html;None
-490;Acting Good;2;2;23-10-2023;Canada;The Comedy Network;episode02-411294-23102023-saison2-Acting-Good.html;None
-491;Harry Wild;4;2;23-10-2023;Etats-Unis;Acorn TV;episode04-410202-23102023-saison2-Harry-Wild.html;None
-492;Murdoch Mysteries;4;17;23-10-2023;Canada;Citytv;episode04-410872-23102023-saison17-Murdoch-Mysteries.html;None
-493;Narvalo;7;3;23-10-2023;France;Canal+;episode07-410631-23102023-saison3-Narvalo.html;None
-494;SOKO Potsdam;5;6;23-10-2023;Allemagne;ZDF;episode05-410910-23102023-saison6-SOKO-Potsdam.html;None
-495;Spooky Files;1;1;23-10-2023;Royaume-Uni;CBBC;episode01-411213-23102023-saison1-Spooky-Files.html;None
-496;Spooky Files;2;1;23-10-2023;Royaume-Uni;CBBC;episode02-411214-23102023-saison1-Spooky-Files.html;None
-497;Spooky Files;3;1;23-10-2023;Royaume-Uni;CBBC;episode03-411215-23102023-saison1-Spooky-Files.html;None
-498;Spooky Files;4;1;23-10-2023;Royaume-Uni;CBBC;episode04-411216-23102023-saison1-Spooky-Files.html;None
-499;Spooky Files;5;1;23-10-2023;Royaume-Uni;CBBC;episode05-411217-23102023-saison1-Spooky-Files.html;None
-500;The Irrational;5;1;23-10-2023;Etats-Unis;NBC;episode05-409864-23102023-saison1-The-Irrational.html;None
-501;Found;4;1;24-10-2023;Etats-Unis;NBC;episode04-409895-24102023-saison1-Found.html;None
-502;The Oval;2;5;24-10-2023;Etats-Unis;BET;episode02-411123-24102023-saison5-The-Oval.html;None
-503;Absolutni debiutanci;1;1;25-10-2023;Etats-Unis;Netflix;episode01-410956-25102023-saison1-Absolutni-debiutanci.html;None
-504;American Horror Story;6;12;25-10-2023;Etats-Unis;FX;episode06-410999-25102023-saison12-American-Horror-Story.html;None
-505;Chucky;4;3;25-10-2023;Etats-Unis;Syfy;episode04-409117-25102023-saison3-Chucky.html;None
-506;Cooper's Bar;4;2;25-10-2023;Etats-Unis;AMC;episode04-411064-25102023-saison2-Cooper-s-Bar.html;None
-507;Hudson & Rex;4;6;25-10-2023;Canada;Citytv;episode04-411098-25102023-saison6-Hudson--Rex.html;None
-508;I Leoni di Sicilia;1;1;25-10-2023;Etats-Unis;Disney+;episode01-411334-25102023-saison1-I-Leoni-di-Sicilia.html;None
-509;I Leoni di Sicilia;2;1;25-10-2023;Etats-Unis;Disney+;episode02-411335-25102023-saison1-I-Leoni-di-Sicilia.html;None
-510;I Leoni di Sicilia;3;1;25-10-2023;Etats-Unis;Disney+;episode03-411336-25102023-saison1-I-Leoni-di-Sicilia.html;None
-511;I Leoni di Sicilia;4;1;25-10-2023;Etats-Unis;Disney+;episode04-411337-25102023-saison1-I-Leoni-di-Sicilia.html;None
-512;Invasion (2021);10;2;25-10-2023;Etats-Unis;Apple TV+;episode10-407974-25102023-saison2-Invasion-(2021).html;None
-513;Magnum P.I. (2018);14;5;25-10-2023;Etats-Unis;NBC;episode14-410786-25102023-saison5-Magnum-PI-(2018).html;None
-514;Quantum Leap (2022);4;2;25-10-2023;Etats-Unis;NBC;episode04-410254-25102023-saison2-Quantum-Leap-(2022).html;None
-515;Robyn Hood;5;1;25-10-2023;Canada;Global;episode05-411016-25102023-saison1-Robyn-Hood.html;None
-516;Sistas;13;6;25-10-2023;Etats-Unis;BET;episode13-411158-25102023-saison6-Sistas.html;None
-517;SurrealEstate;4;2;25-10-2023;Etats-Unis;Syfy;episode04-410886-25102023-saison2-SurrealEstate.html;None
-518;The Morning Show;8;3;25-10-2023;Etats-Unis;Apple TV+;episode08-407703-25102023-saison3-The-Morning-Show.html;None
-519;The Worst of Evil;10;1;25-10-2023;Etats-Unis;Disney+;episode10-410772-25102023-saison1-The-Worst-of-Evil.html;None
-520;The Worst of Evil;11;1;25-10-2023;Etats-Unis;Disney+;episode11-410773-25102023-saison1-The-Worst-of-Evil.html;None
-521;The Worst of Evil;12;1;25-10-2023;Etats-Unis;Disney+;episode12-410774-25102023-saison1-The-Worst-of-Evil.html;None
-522;Young Dylan;8;4;25-10-2023;Etats-Unis;Nickelodeon;episode08-410988-25102023-saison4-Young-Dylan.html;None
-523;All Creatures Great and Small (2020);4;4;26-10-2023;Royaume-Uni;Channel 5;episode04-410984-26102023-saison4-All-Creatures-Great-and-Small-(2020).html;None
-524;American Horror Stories;1;3;26-10-2023;Etats-Unis;FX;episode01-409055-26102023-saison3-American-Horror-Stories.html;None
-525;American Horror Stories;2;3;26-10-2023;Etats-Unis;FX;episode02-411055-26102023-saison3-American-Horror-Stories.html;None
-526;American Horror Stories;3;3;26-10-2023;Etats-Unis;FX;episode03-411056-26102023-saison3-American-Horror-Stories.html;None
-527;American Horror Stories;4;3;26-10-2023;Etats-Unis;FX;episode04-411057-26102023-saison3-American-Horror-Stories.html;None
-528;À La Carte;7;2;26-10-2023;Etats-Unis;ALLBLK;episode07-410520-26102023-saison2-A-La-Carte.html;None
-529;Doom Patrol;10;4;26-10-2023;Etats-Unis;HBO Max;episode10-410007-26102023-saison4-Doom-Patrol.html;None
-530;Frasier (2023);4;1;26-10-2023;Etats-Unis;Paramount+;episode04-409726-26102023-saison1-Frasier-(2023).html;None
-531;La Mesias;4;1;26-10-2023;Espagne;Moviestar+;episode04-410546-26102023-saison1-La-Mesias.html;None
-532;Loki;4;2;26-10-2023;Etats-Unis;Disney+;episode04-410904-26102023-saison2-Loki.html;None
-533;LT-21;5;1;26-10-2023;France;OCS;episode05-408966-26102023-saison1-LT-21.html;None
-534;LT-21;6;1;26-10-2023;France;OCS;episode06-408967-26102023-saison1-LT-21.html;None
-535;Our Flag Means Death;8;2;26-10-2023;Etats-Unis;HBO Max;episode08-409669-26102023-saison2-Our-Flag-Means-Death.html;None
-536;Pluto;1;1;26-10-2023;Etats-Unis;Netflix;episode01-406634-26102023-saison1-Pluto.html;None
-537;Star Trek: Lower Decks;9;4;26-10-2023;Etats-Unis;Paramount+;episode09-409763-26102023-saison4-Star-Trek-Lower-Decks.html;None
-538;The Vanishing Triangle;1;1;26-10-2023;Etats-Unis;SundanceTV;episode01-410193-26102023-saison1-The-Vanishing-Triangle.html;None
-539;The Vanishing Triangle;2;1;26-10-2023;Etats-Unis;SundanceTV;episode02-410194-26102023-saison1-The-Vanishing-Triangle.html;None
-540;Billions;12;7;27-10-2023;Etats-Unis;Showtime;episode12-409777-27102023-saison7-Billions.html;None
-541;Bosch: Legacy;5;2;27-10-2023;Etats-Unis;Amazon Freevee;episode05-409711-27102023-saison2-Bosch-Legacy.html;None
-542;Bosch: Legacy;6;2;27-10-2023;Etats-Unis;Amazon Freevee;episode06-409712-27102023-saison2-Bosch-Legacy.html;None
-543;Fellow Travelers 1;1;1;27-10-2023;Etats-Unis;Showtime;episode01-409066-27102023-saison1-Fellow-Travelers-1.html;None
-544;Gen V;7;1;27-10-2023;Etats-Unis;Prime Video;episode07-408431-27102023-saison1-Gen-V.html;None
-545;Goosebumps (2023);7;1;27-10-2023;Etats-Unis;Disney+;episode07-409984-27102023-saison1-Goosebumps-(2023).html;None
-546;Lessons In Chemistry;4;1;27-10-2023;Etats-Unis;Apple TV+;episode04-406600-27102023-saison1-Lessons-In-Chemistry.html;None
-547;Memento Mori;1;1;27-10-2023;Etats-Unis;Prime Video;episode01-410947-27102023-saison1-Memento-Mori.html;None
-548;Shining Vale;3;2;27-10-2023;Etats-Unis;Starz;episode03-411124-27102023-saison2-Shining-Vale.html;None
-549;SOKO Leipzig;10;24;27-10-2023;Allemagne;ZDF;episode10-410564-27102023-saison24-SOKO-Leipzig.html;None
-550;Still Up;8;1;27-10-2023;Etats-Unis;Apple TV+;episode08-408949-27102023-saison1-Still-Up.html;None
-551;The Good Ship Murder;3;1;27-10-2023;Royaume-Uni;Channel 5;episode03-410954-27102023-saison1-The-Good-Ship-Murder.html;None
-552;Tore;1;1;27-10-2023;Etats-Unis;Netflix;episode01-410156-27102023-saison1-Tore.html;None
-553;Tore;2;1;27-10-2023;Etats-Unis;Netflix;episode02-410157-27102023-saison1-Tore.html;None
-554;Tore;3;1;27-10-2023;Etats-Unis;Netflix;episode03-410158-27102023-saison1-Tore.html;None
-555;Tore;4;1;27-10-2023;Etats-Unis;Netflix;episode04-410159-27102023-saison1-Tore.html;None
-556;Tore;5;1;27-10-2023;Etats-Unis;Netflix;episode05-410160-27102023-saison1-Tore.html;None
-557;Tore;6;1;27-10-2023;Etats-Unis;Netflix;episode06-410161-27102023-saison1-Tore.html;None
-558;Transplant;4;4;27-10-2023;Canada;CTV;episode04-409840-27102023-saison4-Transplant.html;None
-559;Upload;3;3;27-10-2023;Etats-Unis;Prime Video;episode03-410012-27102023-saison3-Upload.html;None
-560;Upload;4;3;27-10-2023;Etats-Unis;Prime Video;episode04-410013-27102023-saison3-Upload.html;None
-561;All Rise;17;3;28-10-2023;Etats-Unis;OWN;episode17-410331-28102023-saison3-All-Rise.html;None
-562;Boomer;9;1;28-10-2023;Belgique;Één;episode09-409830-28102023-saison1-Boomer.html;None
-563;Billy the Kid;3;2;29-10-2023;Etats-Unis;Epix;episode03-409589-29102023-saison2-Billy-the-Kid.html;None
-564;Bob's Burgers;4;14;29-10-2023;Etats-Unis;Fox;episode04-410887-29102023-saison14-Bob-s-Burgers.html;None
-565;Entre Tierras;8;1;29-10-2023;Espagne;ATRESplayer;episode08-410974-29102023-saison1-Entre-Tierras.html;None
-566;Fear the Walking Dead;8;8;29-10-2023;Etats-Unis;AMC;episode08-408755-29102023-saison8-Fear-the-Walking-Dead.html;None
-567;Heartland (CA);5;17;29-10-2023;Canada;CBC;episode05-411244-29102023-saison17-Heartland-(CA).html;None
-568;Krapopolis;6;1;29-10-2023;Etats-Unis;Fox;episode06-410700-29102023-saison1-Krapopolis.html;None
-569;Les Mystères de l'amour;12;33;29-10-2023;France;TMC;episode12-411100-29102023-saison33-Les-Mysteres-de-l-amour.html;None
-570;Rick and Morty;3;7;29-10-2023;Etats-Unis;Adult Swim;episode03-411159-29102023-saison7-Rick-and-Morty.html;None
-571;SkyMed;5;2;29-10-2023;Canada;CBC Gem;episode05-411280-29102023-saison2-SkyMed.html;None
-572;The Gilded Age;1;2;29-10-2023;Etats-Unis;HBO;episode01-409717-29102023-saison2-The-Gilded-Age.html;None
-573;The Simpsons;4;35;29-10-2023;Etats-Unis;Fox;episode04-410985-29102023-saison35-The-Simpsons.html;None
-574;The Winter King;9;1;29-10-2023;Royaume-Uni;ITVX;episode09-409135-29102023-saison1-The-Winter-King.html;None
-575;Acting Good;3;2;30-10-2023;Canada;The Comedy Network;episode03-411295-30102023-saison2-Acting-Good.html;None
-576;American Dad!;15;19;30-10-2023;Etats-Unis;TBS (US);episode15-411032-30102023-saison19-American-Dad.html;None
-577;Harry Wild;5;2;30-10-2023;Etats-Unis;Acorn TV;episode05-410203-30102023-saison2-Harry-Wild.html;None
-578;Murdoch Mysteries;5;17;30-10-2023;Canada;Citytv;episode05-411017-30102023-saison17-Murdoch-Mysteries.html;None
-579;SOKO Potsdam;6;6;30-10-2023;Allemagne;ZDF;episode06-410911-30102023-saison6-SOKO-Potsdam.html;None
-580;The Irrational;6;1;30-10-2023;Etats-Unis;NBC;episode06-409865-30102023-saison1-The-Irrational.html;None
-581;Found;5;1;31-10-2023;Etats-Unis;NBC;episode05-409896-31102023-saison1-Found.html;None
-582;The Oval;3;5;31-10-2023;Etats-Unis;BET;episode03-411296-31102023-saison5-The-Oval.html;None
+475;All Rise;16;3;21-10-2023;Etats-Unis;OWN;episode16-410330-21102023-saison3-All-Rise.html;None
+476;Boomer;8;1;21-10-2023;Belgique;Één;episode08-409829-21102023-saison1-Boomer.html;None
+477;Billy the Kid;2;2;22-10-2023;Etats-Unis;Epix;episode02-409588-22102023-saison2-Billy-the-Kid.html;None
+478;Bob's Burgers;3;14;22-10-2023;Etats-Unis;Fox;episode03-410885-22102023-saison14-Bob-s-Burgers.html;None
+479;Entre Tierras;7;1;22-10-2023;Espagne;ATRESplayer;episode07-410973-22102023-saison1-Entre-Tierras.html;None
+480;Family Guy;3;22;22-10-2023;Etats-Unis;Fox;episode03-410998-22102023-saison22-Family-Guy.html;None
+481;Fear the Walking Dead;7;8;22-10-2023;Etats-Unis;AMC;episode07-408754-22102023-saison8-Fear-the-Walking-Dead.html;None
+482;Heartland (CA);4;17;22-10-2023;Canada;CBC;episode04-410871-22102023-saison17-Heartland-(CA).html;None
+483;Krapopolis;5;1;22-10-2023;Etats-Unis;Fox;episode05-410699-22102023-saison1-Krapopolis.html;None
+484;Les Mystères de l'amour;11;33;22-10-2023;France;TMC;episode11-410883-22102023-saison33-Les-Mysteres-de-l-amour.html;None
+485;Rick and Morty;2;7;22-10-2023;Etats-Unis;Adult Swim;episode02-410175-22102023-saison7-Rick-and-Morty.html;None
+486;SkyMed;4;2;22-10-2023;Canada;CBC Gem;episode04-411101-22102023-saison2-SkyMed.html;None
+487;The Simpsons;3;35;22-10-2023;Etats-Unis;Fox;episode03-410884-22102023-saison35-The-Simpsons.html;None
+488;The Villains of Valley View;17;2;22-10-2023;Etats-Unis;Disney Channel;episode17-411283-22102023-saison2-The-Villains-of-Valley-View.html;None
+489;The Winter King;8;1;22-10-2023;Royaume-Uni;ITVX;episode08-409134-22102023-saison1-The-Winter-King.html;None
+490;30 Monedas;1;2;23-10-2023;Europe;HBO Europe;episode01-410606-23102023-saison2-30-Monedas.html;None
+491;5è Rang;7;6;23-10-2023;Canada;Radio Canada;episode07-411293-23102023-saison6-5e-Rang.html;None
+492;Acting Good;2;2;23-10-2023;Canada;The Comedy Network;episode02-411294-23102023-saison2-Acting-Good.html;None
+493;Harry Wild;4;2;23-10-2023;Etats-Unis;Acorn TV;episode04-410202-23102023-saison2-Harry-Wild.html;None
+494;Murdoch Mysteries;4;17;23-10-2023;Canada;Citytv;episode04-410872-23102023-saison17-Murdoch-Mysteries.html;None
+495;Narvalo;7;3;23-10-2023;France;Canal+;episode07-410631-23102023-saison3-Narvalo.html;None
+496;SOKO Potsdam;5;6;23-10-2023;Allemagne;ZDF;episode05-410910-23102023-saison6-SOKO-Potsdam.html;None
+497;Spooky Files;1;1;23-10-2023;Royaume-Uni;CBBC;episode01-411213-23102023-saison1-Spooky-Files.html;None
+498;Spooky Files;2;1;23-10-2023;Royaume-Uni;CBBC;episode02-411214-23102023-saison1-Spooky-Files.html;None
+499;Spooky Files;3;1;23-10-2023;Royaume-Uni;CBBC;episode03-411215-23102023-saison1-Spooky-Files.html;None
+500;Spooky Files;4;1;23-10-2023;Royaume-Uni;CBBC;episode04-411216-23102023-saison1-Spooky-Files.html;None
+501;Spooky Files;5;1;23-10-2023;Royaume-Uni;CBBC;episode05-411217-23102023-saison1-Spooky-Files.html;None
+502;The Irrational;5;1;23-10-2023;Etats-Unis;NBC;episode05-409864-23102023-saison1-The-Irrational.html;None
+503;Found;4;1;24-10-2023;Etats-Unis;NBC;episode04-409895-24102023-saison1-Found.html;None
+504;The Oval;2;5;24-10-2023;Etats-Unis;BET;episode02-411123-24102023-saison5-The-Oval.html;None
+505;Absolutni debiutanci;1;1;25-10-2023;Etats-Unis;Netflix;episode01-410956-25102023-saison1-Absolutni-debiutanci.html;None
+506;American Horror Story;6;12;25-10-2023;Etats-Unis;FX;episode06-410999-25102023-saison12-American-Horror-Story.html;None
+507;Chucky;4;3;25-10-2023;Etats-Unis;Syfy;episode04-409117-25102023-saison3-Chucky.html;None
+508;Cooper's Bar;4;2;25-10-2023;Etats-Unis;AMC;episode04-411064-25102023-saison2-Cooper-s-Bar.html;None
+509;Hudson & Rex;4;6;25-10-2023;Canada;Citytv;episode04-411098-25102023-saison6-Hudson--Rex.html;None
+510;I Leoni di Sicilia;1;1;25-10-2023;Etats-Unis;Disney+;episode01-411334-25102023-saison1-I-Leoni-di-Sicilia.html;None
+511;I Leoni di Sicilia;2;1;25-10-2023;Etats-Unis;Disney+;episode02-411335-25102023-saison1-I-Leoni-di-Sicilia.html;None
+512;I Leoni di Sicilia;3;1;25-10-2023;Etats-Unis;Disney+;episode03-411336-25102023-saison1-I-Leoni-di-Sicilia.html;None
+513;I Leoni di Sicilia;4;1;25-10-2023;Etats-Unis;Disney+;episode04-411337-25102023-saison1-I-Leoni-di-Sicilia.html;None
+514;Invasion (2021);10;2;25-10-2023;Etats-Unis;Apple TV+;episode10-407974-25102023-saison2-Invasion-(2021).html;52
+515;Magnum P.I. (2018);14;5;25-10-2023;Etats-Unis;NBC;episode14-410786-25102023-saison5-Magnum-PI-(2018).html;None
+516;Quantum Leap (2022);4;2;25-10-2023;Etats-Unis;NBC;episode04-410254-25102023-saison2-Quantum-Leap-(2022).html;None
+517;Robyn Hood;5;1;25-10-2023;Canada;Global;episode05-411016-25102023-saison1-Robyn-Hood.html;None
+518;Sistas;13;6;25-10-2023;Etats-Unis;BET;episode13-411158-25102023-saison6-Sistas.html;None
+519;SurrealEstate;4;2;25-10-2023;Etats-Unis;Syfy;episode04-410886-25102023-saison2-SurrealEstate.html;None
+520;The Morning Show;8;3;25-10-2023;Etats-Unis;Apple TV+;episode08-407703-25102023-saison3-The-Morning-Show.html;50
+521;The Worst of Evil;10;1;25-10-2023;Etats-Unis;Disney+;episode10-410772-25102023-saison1-The-Worst-of-Evil.html;None
+522;The Worst of Evil;11;1;25-10-2023;Etats-Unis;Disney+;episode11-410773-25102023-saison1-The-Worst-of-Evil.html;None
+523;The Worst of Evil;12;1;25-10-2023;Etats-Unis;Disney+;episode12-410774-25102023-saison1-The-Worst-of-Evil.html;None
+524;Young Dylan;8;4;25-10-2023;Etats-Unis;Nickelodeon;episode08-410988-25102023-saison4-Young-Dylan.html;None
+525;All Creatures Great and Small (2020);4;4;26-10-2023;Royaume-Uni;Channel 5;episode04-410984-26102023-saison4-All-Creatures-Great-and-Small-(2020).html;None
+526;American Horror Stories;1;3;26-10-2023;Etats-Unis;FX;episode01-409055-26102023-saison3-American-Horror-Stories.html;None
+527;American Horror Stories;2;3;26-10-2023;Etats-Unis;FX;episode02-411055-26102023-saison3-American-Horror-Stories.html;None
+528;American Horror Stories;3;3;26-10-2023;Etats-Unis;FX;episode03-411056-26102023-saison3-American-Horror-Stories.html;None
+529;American Horror Stories;4;3;26-10-2023;Etats-Unis;FX;episode04-411057-26102023-saison3-American-Horror-Stories.html;None
+530;À La Carte;7;2;26-10-2023;Etats-Unis;ALLBLK;episode07-410520-26102023-saison2-A-La-Carte.html;None
+531;Doom Patrol;10;4;26-10-2023;Etats-Unis;HBO Max;episode10-410007-26102023-saison4-Doom-Patrol.html;None
+532;Frasier (2023);4;1;26-10-2023;Etats-Unis;Paramount+;episode04-409726-26102023-saison1-Frasier-(2023).html;None
+533;La Mesias;4;1;26-10-2023;Espagne;Moviestar+;episode04-410546-26102023-saison1-La-Mesias.html;None
+534;Loki;4;2;26-10-2023;Etats-Unis;Disney+;episode04-410904-26102023-saison2-Loki.html;None
+535;LT-21;5;1;26-10-2023;France;OCS;episode05-408966-26102023-saison1-LT-21.html;None
+536;LT-21;6;1;26-10-2023;France;OCS;episode06-408967-26102023-saison1-LT-21.html;None
+537;Our Flag Means Death;8;2;26-10-2023;Etats-Unis;HBO Max;episode08-409669-26102023-saison2-Our-Flag-Means-Death.html;None
+538;Pluto;1;1;26-10-2023;Etats-Unis;Netflix;episode01-406634-26102023-saison1-Pluto.html;None
+539;Star Trek: Lower Decks;9;4;26-10-2023;Etats-Unis;Paramount+;episode09-409763-26102023-saison4-Star-Trek-Lower-Decks.html;None
+540;The Vanishing Triangle;1;1;26-10-2023;Etats-Unis;SundanceTV;episode01-410193-26102023-saison1-The-Vanishing-Triangle.html;None
+541;The Vanishing Triangle;2;1;26-10-2023;Etats-Unis;SundanceTV;episode02-410194-26102023-saison1-The-Vanishing-Triangle.html;None
+542;Billions;12;7;27-10-2023;Etats-Unis;Showtime;episode12-409777-27102023-saison7-Billions.html;None
+543;Bosch: Legacy;5;2;27-10-2023;Etats-Unis;Amazon Freevee;episode05-409711-27102023-saison2-Bosch-Legacy.html;None
+544;Bosch: Legacy;6;2;27-10-2023;Etats-Unis;Amazon Freevee;episode06-409712-27102023-saison2-Bosch-Legacy.html;None
+545;Fellow Travelers 1;1;1;27-10-2023;Etats-Unis;Showtime;episode01-409066-27102023-saison1-Fellow-Travelers-1.html;None
+546;Gen V;7;1;27-10-2023;Etats-Unis;Prime Video;episode07-408431-27102023-saison1-Gen-V.html;None
+547;Goosebumps (2023);7;1;27-10-2023;Etats-Unis;Disney+;episode07-409984-27102023-saison1-Goosebumps-(2023).html;None
+548;Lessons In Chemistry;4;1;27-10-2023;Etats-Unis;Apple TV+;episode04-406600-27102023-saison1-Lessons-In-Chemistry.html;54
+549;Memento Mori;1;1;27-10-2023;Etats-Unis;Prime Video;episode01-410947-27102023-saison1-Memento-Mori.html;None
+550;Shining Vale;3;2;27-10-2023;Etats-Unis;Starz;episode03-411124-27102023-saison2-Shining-Vale.html;None
+551;SOKO Leipzig;10;24;27-10-2023;Allemagne;ZDF;episode10-410564-27102023-saison24-SOKO-Leipzig.html;None
+552;Still Up;8;1;27-10-2023;Etats-Unis;Apple TV+;episode08-408949-27102023-saison1-Still-Up.html;45
+553;The Good Ship Murder;3;1;27-10-2023;Royaume-Uni;Channel 5;episode03-410954-27102023-saison1-The-Good-Ship-Murder.html;None
+554;Tore;1;1;27-10-2023;Etats-Unis;Netflix;episode01-410156-27102023-saison1-Tore.html;None
+555;Tore;2;1;27-10-2023;Etats-Unis;Netflix;episode02-410157-27102023-saison1-Tore.html;None
+556;Tore;3;1;27-10-2023;Etats-Unis;Netflix;episode03-410158-27102023-saison1-Tore.html;None
+557;Tore;4;1;27-10-2023;Etats-Unis;Netflix;episode04-410159-27102023-saison1-Tore.html;None
+558;Tore;5;1;27-10-2023;Etats-Unis;Netflix;episode05-410160-27102023-saison1-Tore.html;None
+559;Tore;6;1;27-10-2023;Etats-Unis;Netflix;episode06-410161-27102023-saison1-Tore.html;None
+560;Transplant;4;4;27-10-2023;Canada;CTV;episode04-409840-27102023-saison4-Transplant.html;None
+561;Upload;3;3;27-10-2023;Etats-Unis;Prime Video;episode03-410012-27102023-saison3-Upload.html;None
+562;Upload;4;3;27-10-2023;Etats-Unis;Prime Video;episode04-410013-27102023-saison3-Upload.html;None
+563;All Rise;17;3;28-10-2023;Etats-Unis;OWN;episode17-410331-28102023-saison3-All-Rise.html;None
+564;Boomer;9;1;28-10-2023;Belgique;Één;episode09-409830-28102023-saison1-Boomer.html;None
+565;Billy the Kid;3;2;29-10-2023;Etats-Unis;Epix;episode03-409589-29102023-saison2-Billy-the-Kid.html;None
+566;Bob's Burgers;4;14;29-10-2023;Etats-Unis;Fox;episode04-410887-29102023-saison14-Bob-s-Burgers.html;None
+567;Entre Tierras;8;1;29-10-2023;Espagne;ATRESplayer;episode08-410974-29102023-saison1-Entre-Tierras.html;None
+568;Fear the Walking Dead;8;8;29-10-2023;Etats-Unis;AMC;episode08-408755-29102023-saison8-Fear-the-Walking-Dead.html;None
+569;Heartland (CA);5;17;29-10-2023;Canada;CBC;episode05-411244-29102023-saison17-Heartland-(CA).html;None
+570;Krapopolis;6;1;29-10-2023;Etats-Unis;Fox;episode06-410700-29102023-saison1-Krapopolis.html;None
+571;Les Mystères de l'amour;12;33;29-10-2023;France;TMC;episode12-411100-29102023-saison33-Les-Mysteres-de-l-amour.html;None
+572;Rick and Morty;3;7;29-10-2023;Etats-Unis;Adult Swim;episode03-411159-29102023-saison7-Rick-and-Morty.html;None
+573;SkyMed;5;2;29-10-2023;Canada;CBC Gem;episode05-411280-29102023-saison2-SkyMed.html;None
+574;The Gilded Age;1;2;29-10-2023;Etats-Unis;HBO;episode01-409717-29102023-saison2-The-Gilded-Age.html;None
+575;The Simpsons;4;35;29-10-2023;Etats-Unis;Fox;episode04-410985-29102023-saison35-The-Simpsons.html;None
+576;The Winter King;9;1;29-10-2023;Royaume-Uni;ITVX;episode09-409135-29102023-saison1-The-Winter-King.html;None
+577;Acting Good;3;2;30-10-2023;Canada;The Comedy Network;episode03-411295-30102023-saison2-Acting-Good.html;None
+578;American Dad!;15;19;30-10-2023;Etats-Unis;TBS (US);episode15-411032-30102023-saison19-American-Dad.html;None
+579;Harry Wild;5;2;30-10-2023;Etats-Unis;Acorn TV;episode05-410203-30102023-saison2-Harry-Wild.html;None
+580;Murdoch Mysteries;5;17;30-10-2023;Canada;Citytv;episode05-411017-30102023-saison17-Murdoch-Mysteries.html;None
+581;SOKO Potsdam;6;6;30-10-2023;Allemagne;ZDF;episode06-410911-30102023-saison6-SOKO-Potsdam.html;None
+582;The Irrational;6;1;30-10-2023;Etats-Unis;NBC;episode06-409865-30102023-saison1-The-Irrational.html;None
+583;Found;5;1;31-10-2023;Etats-Unis;NBC;episode05-409896-31102023-saison1-Found.html;None
+584;The Oval;3;5;31-10-2023;Etats-Unis;BET;episode03-411296-31102023-saison5-The-Oval.html;None

@@ -1,6 +1,6 @@
 from webscrapper import ScrapEpisodes
 from Algorithmie.Algorithmie import Algorithmie
-from SQL.PostgreSQLManager import PostgreSQLManager
+from SQL.PostGreSQLmanager import PostgreSQLManager
 from SQL.SQLiteManager import SQLiteManager
 from ManagerCSV.ManagerCSV import ManagerCSV
 
