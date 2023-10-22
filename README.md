@@ -102,7 +102,35 @@ Quelle est la chaîne de TV qui diffuse des épisodes pendant le plus grand nomb
 Il y a beaucoup de chaîne de TV qui diffuse 2 jours consécutifs, c'est le maximum et la premiere à le faire au mois d'octobre est NBC.
 
 # SQL [1/2]
+## SQLite
+Nous avons inséré les données sur notre base de données sqlite située dans le dossier data/databases. Elle s'intitule database.db et possède une table episode. Nous avons séparés les fonctions dans 2 fichiers situés dans le dossier SQL pour bien différencier les 2 bases concernées dans ce projet.
+## SQLiteManager
+Pour ce qui est des fonctions elles sont gérées sur le SQLiteManager qui est une classe qui englobe toutes les fonctions nécessaire au bon déroulement du code.
+
+## PostGreSQL
+Il en est de même pour la base de données PostgreSQL sur Scalingo qui possède elle aussi la table episode.
+## PostgreSQLManager
+Il y a également une classe dédiée à la base de données distante qui s'intitule PostgreSQLManager et qui contient toutes ce qui permet à la base d'insérer ces données.
+
 # SQL [2/2]
+Nous avons repris la liste d'épisode modifiée qui contient les durées des épisodes appartenant à Apple TV. 
+## Création de la table duration
+En ajoutant dans chaque classe une fonction qui correspond à la création de la table duration sans oublier de lui attribuer un FOREIGN KEY sur le champ episode_id qui pointe vers id de la table episode.
+
+## Insertion dans la table duration
+En ce qui concerne la requête d'insertion, elle est différente entre les 2 classes. Elles diffèrent dans la manière de stocker episode_id.
+### SQLiteManager
+Pour stocker cet episode_id nous passons par ce la méthode lastrowid. 
+```
+episode_id = cur.lastrowid
+```
+### PostgreSQLManager
+Pour stocker cet episode_id nous passons par ce l'attribut RETURNING qui est propre au système de requêtage de PostgreSQL. 
+```
+INSERT INTO episode (air_date, origin_country, channel, series_name, episode_number, season_number, episode_url) VALUES (%s, %s, %s, %s, %s, %s, %s) RETURNING id
+```
+
+Il y a 18 résultats suite à l'insertion dans la table duration.
 
 # Orchestration
 Nous avons réaliser la partie Orchestration, ainsi il est possible d'exécuter le fichier **summarize_episodes.py** depuis la console de cette manière :
@@ -123,3 +151,9 @@ C'est [CHAINE] qui diffusera le plus d'episodes avec [NOMBRE] épisodes.
 C'est [CHAINE] qui diffusera des épisodes pendant le plus grand nombre \
 de jours consécutifs avec [NOMBRE] de jours consécutifs.
 ```
+
+## Remarque :
+Avant d'aborder le sujet, nous avons rencontré des problèmes concernant l'accès à la base de données distante de Scalingo. En effet, nous avons eu cette erreur : 
+```
+connection to server at "livecampus--5939.postgresql.a.osc-fr1.scalingo-dbs.com" (5.104.103.28), port 33846 failed: FATAL:  remaining connection slots are reserved for non-replication superuser connections
+``` 

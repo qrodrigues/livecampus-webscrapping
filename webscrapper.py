@@ -20,7 +20,7 @@ class ScrapEpisodes:
         spans = page.find_all("span", class_="calendrier_episodes")
 
         for td in td_tags:
-            div_jour_tag = td.find("div", class_="div_jour")
+            div_jour_tag = td.find("div", class_=["div_jour", "div_jourcourant"])
             if div_jour_tag:
                 date = div_jour_tag["id"].split("jour_")[1]
                 span_tags = td.find_all("span", class_="calendrier_episodes")
@@ -37,10 +37,10 @@ class ScrapEpisodes:
 
                     # Ajout de la durée si c'est la chaine et Apple TV+
                     duration = None
-                    # if channel == 'Apple TV+':
-                    #     print('Récupération des données de la page ' + series_name + '...')
-                    #     duration = self.getEpisodeDuration(self.base_url, '/' + episode_url)
-                    #     time.sleep(1) # Attente d'une seconde pour ne pas spam le serveur web
+                    if channel == 'Apple TV+':
+                        print('Récupération des données de la page ' + series_name + '...')
+                        duration = self.getEpisodeDuration(self.base_url, '/' + episode_url)
+                        time.sleep(1) # Attente d'une seconde pour ne pas spam le serveur web
 
                     episodes.append({
                         "air_date": str(date),

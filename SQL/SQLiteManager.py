@@ -80,7 +80,7 @@ class SQLiteManager:
             if conn_lite:
                 cursor.close()
 
-    def save_to_postgres(self, episodes):
+    def save_to_sqlite(self, episodes):
         cur = conn_lite.cursor()
         tb_duration = "duration"
         tb_episode = "episode"
@@ -105,7 +105,7 @@ class SQLiteManager:
 
                 except sqlite3.Error as e:
                     conn_lite.rollback()
-                    print("Erreur lors de l'insertion avec le champ duration :", e)
+                    print("Erreur lors de l'insertion :", e)
 
         finally:
             # Fermer le curseur et la connexion
