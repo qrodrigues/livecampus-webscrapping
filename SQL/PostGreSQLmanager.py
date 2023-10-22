@@ -3,7 +3,7 @@ import psycopg2
 DATABASE_URL = "postgres://course_pyth_8214:WCCU-NNiG777z2cwDPIp@course-pyth-8214.postgresql.a.osc-fr1.scalingo-dbs.com:33810/course_pyth_8214?sslmode=prefer"
 conn = psycopg2.connect(DATABASE_URL)
 
-class PostGreSQLManager:
+class PostgreSQLManager:
     def __init__(self, episodes, connexion):
         self.episodes = episodes
         self.connexion = connexion

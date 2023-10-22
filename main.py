@@ -1,6 +1,6 @@
 from webscrapper import ScrapEpisodes
 from Algorithmie.Algorithmie import Algorithmie
-from SQL.PostGreSQLmanager import PostGreSQLManager
+from SQL.PostgreSQLManager import PostgreSQLManager
 from SQL.SQLiteManager import SQLiteManager
 from ManagerCSV.ManagerCSV import ManagerCSV
 
@@ -58,7 +58,7 @@ print(f"La chaîne de TV qui diffuse des épisodes pendant le plus grand nombre 
 
 print('\n---- Gestion de PostgresSQL ----\n')
 #PostGreSQL
-pgsql = PostGreSQLManager(episodes, conn)
+pgsql = PostgreSQLManager(episodes, conn)
 
 pgsql.drop_tables()
 print("Suppression des tables Episode et Duration... ok")
@@ -70,4 +70,4 @@ sqlite = SQLiteManager(episodes)
 
 sqlite.drop_tables()
 print("Suppression des tables Episode et Duration... ok")
-sqlite.save_to_postgres(episodes)
+sqlite.save_to_sqlite(episodes)
